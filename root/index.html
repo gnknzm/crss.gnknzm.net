@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>CRSS Calculator</title>
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<meta property=og:type content=website>
+	<meta property=og:title content="CRSS Calculator">
+	<meta property=og:description content="Common RyotaK Scoring System Calculator">
+	<meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		body {
+			font-family: sans-serif;
+			height: 100%;
+		}
+		header.owsc {
+			background-color: black;
+			color: white;
+			padding: 20px 0;
+		}
+		header.nod {
+			background-color: #166ea9;
+			color: white;
+			padding: 40px 0;
+		}
+		.container {
+			margin: auto;
+			max-width: 800px;
+			padding: 0 10px;
+		}
+		.selector {
+			padding: 0px 10px;
+			color: black;
+			border: #eaeded 1px solid;
+			margin: 3px 0;
+
+			display: inline-block;
+			cursor: pointer;
+			user-select: none;
+		}
+		.selected, label input:checked ~ .selector {
+			color: white;
+			font-weight: bold;
+			background-color: #004273;
+		}
+		section header {
+			background-color: #104469;
+			color: white;
+			padding: 20px 40px 5px 5px;
+		}
+		section {
+			border: #104469 1px solid;
+		}
+		section > div {
+			padding: 0 5px;
+		}
+		input {
+			display: none;
+		}
+		td:nth-child(1) {
+			text-align: right;
+		}
+
+		main {
+			padding-bottom:  120px;
+		}
+
+		footer {
+			bottom: 0;
+			width: 100%;
+			background-color: #333333;
+			color: white;
+			padding: 50px 0px 200px 0px;
+		}
+	</style>
+</head>
+<body>
+	<header class=owsc>
+		<div class=container>
+			<h1>OWSC</h1>
+		</div>
+	</header>
+	<header class=nod>
+		<div class=container>
+			<h1>NATIONAL OYAJIGYAGU DATABASE</h1>
+		</div>
+	</header>
+	<main>
+		<div class=container>
+			<div class="selector selected">CRSS Version 1.0</div>
+			<h2>Common RyotaK Scoring System Calculator</h2>
+			<div>
+				<table>
+					<tr><td><b>CRSS Base Score:</b></td><td id=base_score></td></tr>
+					<tr><td>Impact Subscore:</td><td id=impact_subscore></td></tr>
+					<tr><td>Exploitability Subscore:</td><td id=exploitability_subscore></td></tr>
+					<tr><td><b>Overall CRSS Score:</b></td><td id=overall_score></td></tr>
+				</table>
+			</div>
+			<section>
+				<header>
+					<h2>Base Score Metrics</h2>
+				</header>
+				<div>
+					<h3>Exploitability Metrics</h3>
+					<form>
+						<div>
+							<h4>寒さへの影響 (SI)*</h4>
+							 <label><input value=0.000 type=radio name=SI><div class=selector>低: Low (SI:L)</div></label
+							><label><input value=0.275 type=radio name=SI><div class=selector>中: Medium (SI:M)</div></label
+							><label><input value=0.660 type=radio name=SI><div class=selector>高: High (SI:H)</div></label>
+						</div>
+						<div>
+							<h4>ギャグの安直さ (GC)*</h4>
+							 <label><input value=0.000 type=radio name=GC><div class=selector>低: Low (GC:L)</div></label
+							><label><input value=0.275 type=radio name=GC><div class=selector>中: Medium (GC:M)</div></label
+							><label><input value=0.660 type=radio name=GC><div class=selector>高: High (GC:H)</div></label>
+						</div>
+						<div>
+							<h4>ユーザーの予備知識 (UK)*</h4>
+							 <label><input value=0.704 type=radio name=UK><div class=selector>低: Low (UK:L)</div></label
+							><label><input value=0.560 type=radio name=UK><div class=selector>中: Medium (UK:M)</div></label
+							><label><input value=0.450 type=radio name=UK><div class=selector>高: High (UK:H)</div></label>
+						</div>
+						<div>
+							<h4>伝達区分の制約 (TL)*</h4>
+							 <label><input value=0.710 type=radio name=TL><div class=selector>なし: None (TL:N)</div></label
+							><label><input value=0.350 type=radio name=TL><div class=selector>あり: Required (TL:R)</div></label>
+						</div>
+						<div>
+							<h4>継続的なユーザーへの影響 (CA)*</h4>
+							 <label><input value=0.0 type=radio name=CA><div class=selector>低: Low (CA:L)</div></label
+							><label><input value=0.3 type=radio name=CA><div class=selector>中: Medium (CA:M)</div></label
+							><label><input value=0.5 type=radio name=CA><div class=selector>高: High (CA:H)</div></label>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class=owsc>
+		<div class=container>
+			<h1>OWSC</h1>
+			<p>Open WorkShare Community</p>
+		</div>
+	</footer>
+	<script>
+		const f_impact = impact => impact == 0 ? 0 : 1.246;
+
+		const round = v => Math.round(v * 10) / 10;
+		const format = v => (round(v)+"").includes(".") ? round(v) : round(v) + ".0";
+
+		const rate = v => {
+			if (v == 0) return '[None なし]';
+			if (v < 4.0) return '[Low 注意]';
+			if (v < 7.0) return '[Medium 警告]';
+			if (v < 9.0) return '[High 重要]';
+			return '[Critical 緊急]';
+		};
+
+		function calc() {
+			const f = document.getElementsByTagName('form')[0];
+			const SI = f.SI.value;
+			const GC = f.GC.value;
+			const impact = 10.41 * (1 - (1 - SI) * (1 - GC));
+
+			document.getElementById('impact_subscore').textContent = format(impact);
+
+			const adjusted_impact = Math.min(10.0, impact);
+
+			const UK = f.UK.value;
+			const TL = f.TL.value;
+			const exploitability = 20 * UK * TL;
+			document.getElementById('exploitability_subscore').textContent = format(exploitability);
+
+			const base_score = (0.6 * adjusted_impact + 0.4 * exploitability - 1.5) * f_impact(impact);
+			document.getElementById('base_score').textContent = format(base_score);
+
+			const overall_score = base_score + (10 - base_score) * f.CA.value;
+			document.getElementById('overall_score').textContent = format(overall_score) + ' ' + rate(round(overall_score));
+		}
+
+		document.addEventListener('DOMContentLoaded', calc);
+		for (e of document.getElementsByTagName('input'))
+			e.addEventListener('change', calc);
+	</script>
+</body>
+</html>
