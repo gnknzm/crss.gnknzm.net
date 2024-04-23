@@ -41,7 +41,7 @@ jobs:
             const issue = context.payload.issue;
             const id = `CRE-${new Date().getFullYear()}-${36000+fs.readdirSync('database').length}`;
             const body = JSON.parse(issue.body);
-            if(!body.author || !body.description || !body.score) {
+            if(!body.author || !body.text || !body.vector_string) {
               throw new Error('Invalid issue body');
             }
             body.id = id;
