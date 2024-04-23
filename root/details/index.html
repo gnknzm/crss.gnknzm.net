@@ -1,118 +1,256 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-	<meta charset="UTF-8">
-	<title>CRSS Calculator</title>
-	<meta name=viewport content="width=device-width,initial-scale=1">
-	<meta property=og:type content=website>
-	<meta property=og:title content="CRSS Calculator">
-	<meta property=og:description content="Common RyotaK Scoring System Calculator">
-	<meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			border: 0;
-		}
+    <meta charset="UTF-8">
+    <title>CRSS Calculator</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta property=og:type content=website>
+    <meta property=og:title content="CRSS Calculator">
+    <meta property=og:description content="Common RyotaK Scoring System Calculator">
+    <meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
 
-		body {
-			font-family: sans-serif;
-			height: 100%;
-		}
-		header.owsc {
-			background-color: black;
-			color: white;
-			padding: 20px 0;
-		}
-		header.nod {
-			background-color: #166ea9;
-			color: white;
-			padding: 40px 0;
-		}
-		.container {
-			margin: auto;
-			max-width: 800px;
-			padding: 0 10px;
-		}
-		.info, .infos {
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-		.info > label {
-			font-weight: bold;
-		}
+        body {
+            font-family: sans-serif;
+            height: 100%;
+        }
 
-		main {
-			padding-bottom:  120px;
-		}
+        header.owsc {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
 
-		footer {
-			bottom: 0;
-			width: 100%;
-			background-color: #333333;
-			color: white;
-			padding: 50px 0px 200px 0px;
-		}
+        header.nod {
+            background-color: #166ea9;
+            color: white;
+            padding: 40px 0;
+        }
 
-	</style>
+        .container {
+            margin: auto;
+            max-width: 800px;
+            padding: 0 10px;
+        }
+
+        .info,
+        .infos {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info>label {
+            font-weight: bold;
+        }
+
+        main {
+            padding-bottom: 120px;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #333333;
+            color: white;
+            padding: 50px 0px 200px 0px;
+        }
+
+        #severity {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .critical {
+            color: #a9a9a9;
+            background-color: black;
+        }
+
+        .high {
+            color: #fff;
+            background-color: #F87F39;
+        }
+
+        .medium {
+            color: black;
+            background-color: #ec971f;
+        }
+
+        .low {
+            color: black;
+            background-color: #f2cc0c;
+        }
+
+        .none {
+            color: black;
+            background-color: darkgrey;
+        }
+    </style>
 </head>
+
 <body>
-	<header class=owsc>
-		<div class=container>
-			<h1>OWSC</h1>
-		</div>
-	</header>
-	<header class=nod>
-		<div class=container>
-			<h1>NATIONAL OYAJIGYAGU DATABASE</h1>
-		</div>
-	</header>
-	<main>
-		<div class=container>
-			<h2 id=cre_id>Common RyotaK Scoring System Calculator</h2>
-			<div class=infos>
-				<div class=info>
-					<label>発言者:</label>
-					<div id=author>読込中...</div>
-				</div>
-				<div class=info>
-					<label>該当テキスト:</label>
-					<div id=text>読込中...</div>
-				</div>
-				<div class=info>
-					<label>Vector String:</label>
-					<div id=vector_string>読込中...</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class=owsc>
-		<div class=container>
-			<h1>OWSC</h1>
-			<p>Open WorkShare Community</p>
-			<hr>
-			<p>Contribute: <a href=https://github.com/gnknzm/crss.gnknzm.net>gnknzm/crss.gnknzm.net</a></p>
-		</div>
-	</footer>
-	<script>
+    <header class=owsc>
+        <div class=container>
+            <h1>OWSC</h1>
+        </div>
+    </header>
+    <header class=nod>
+        <div class=container>
+            <h1>NATIONAL OYAJIGYAGU DATABASE</h1>
+        </div>
+    </header>
+    <main>
+        <div class=container>
+            <h2 id=cre_id>Common RyotaK Scoring System Calculator</h2>
+            <div class=infos>
+                <div class=info>
+                    <!-- 僕はRyotaK度じゃないと思うんですが、RyotaK度じゃないとダメらしいです (2024/04/23: RyotaK) -->
+                    <label>RyotaK度:</label>
+                    <div><label id=severity>読込中...</label></div>
+                </div>
+                <div class=info>
+                    <label>発言者:</label>
+                    <div><label id=author>読込中...</label></div>
+                </div>
+                <div class=info>
+                    <label>該当テキスト:</label>
+                    <div><label id=text>読込中...</label></div>
+                </div>
+                <div class=info>
+                    <label>Vector String:</label>
+                    <div><label id=vector_string>読込中...</label></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class=owsc>
+        <div class=container>
+            <h1>OWSC</h1>
+            <p>Open WorkShare Community</p>
+            <hr>
+            <p>Contribute: <a href=https://github.com/gnknzm/crss.gnknzm.net>gnknzm/crss.gnknzm.net</a></p>
+        </div>
+    </footer>
+    <script>
+        const score_map = {
+            SI: {
+                L: 0.000,
+                M: 0.275,
+                H: 0.660,
+            },
+            GC: {
+                L: 0.000,
+                M: 0.275,
+                H: 0.660,
+            },
+            UK: {
+                L: 0.704,
+                M: 0.560,
+                H: 0.450,
+            },
+            TL: {
+                N: 0.710,
+                R: 0.350,
+            },
+            CA: {
+                L: 0.0,
+                M: 0.3,
+                H: 0.5,
+            },
+        };
+
+        const rate = v => {
+            if (v == 0) {
+                return {
+                    label: '[None なし]',
+                    class: 'none',
+                };
+            }
+            if (v < 4.0) {
+                return {
+                    label: '[Low 注意]',
+                    class: 'low',
+                };
+            }
+            if (v < 7.0) {
+                return {
+                    label: '[Medium 警告]',
+                    class: 'medium',
+                };
+            }
+            if (v < 9.0) {
+                return {
+                    label: '[High 重要]',
+                    class: 'high',
+                };
+            }
+            return {
+                label: '[Critical 緊急]',
+                class: 'critical',
+            };
+        };
+
+        const f_impact = impact => impact == 0 ? 0 : 1.246;
+
+        const round = v => Math.round(v * 10) / 10;
+        const format = v => (round(v) + "").includes(".") ? round(v) : round(v) + ".0";
+
+        function parseVectorString(vector_string) {
+            const [version, ...items] = vector_string.split('/');
+            const result = { version };
+            for (const item of items) {
+                const [key, value] = item.split(':');
+                result[key] = value;
+            }
+            return result;
+        }
+
         (async () => {
             const id = new URLSearchParams(location.search).get('id');
-            if(!id) {
+            if (!id) {
                 location.href = '/';
                 return;
             }
             document.getElementById('cre_id').textContent = id;
+            document.title = `CRSS Calculator - ${id}`;
             const resp = await fetch(`https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/${encodeURIComponent(id)}.json`);
-            if(resp.status !== 200) {
+            if (resp.status !== 200) {
                 location.href = '/';
                 return;
             }
             const data = await resp.json();
-            document.title = `CRSS Calculator - ${data.id}`;
             document.getElementById('author').textContent = data.author;
             document.getElementById('text').textContent = data.text;
             document.getElementById('vector_string').textContent = data.vector_string;
+
+            const scoreData = parseVectorString(data.vector_string);
+
+            const SI = score_map.SI[scoreData.SI];
+            const GC = score_map.GC[scoreData.GC];
+            const impact = 10.41 * (1 - (1 - SI) * (1 - GC));
+
+            const adjusted_impact = Math.min(10.0, impact);
+
+            const UK = score_map.UK[scoreData.UK];
+            const TL = score_map.TL[scoreData.TL];
+            const exploitability = 20 * UK * TL;
+
+            const base_score = (0.6 * adjusted_impact + 0.4 * exploitability - 1.5) * f_impact(impact);
+
+            const overall_score = base_score + (10 - base_score) * score_map.CA[scoreData.CA];
+
+            const severity = rate(round(overall_score));
+            const severityElement = document.getElementById('severity');
+            severityElement.textContent = format(overall_score) + ' ' + severity.label;
+            severityElement.className = severity.class;
         })();
-	</script>
+    </script>
 </body>
+
 </html>
