@@ -1,0 +1,98 @@
+# Workflow file for registering dad jokes from issues
+name: Register dad jokes from issues
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: write
+
+jobs:
+  register-dad-jokes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check permissions
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const { data: permissions } = await github.rest.repos.getCollaboratorPermissionLevel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              username: context.payload.issue.user.login
+            });
+            if (permissions.permission !== 'write' && permissions.permission !== 'admin') {
+              throw new Error('User does not have write permissions');
+            }
+
+      - name: Checkout
+        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f
+
+      - name: Write dad joke to file
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            if (!fs.existsSync('database')) {
+              fs.mkdirSync('database');
+            }
+            const issue = context.payload.issue;
+            const id = `CRE-${new Date().getFullYear()}-${36000+fs.readdirSync('database').length}`;
+            const body = JSON.parse(issue.body);
+            if(!body.author || !body.description || !body.score) {
+              throw new Error('Invalid issue body');
+            }
+            body.id = id;
+            const issuePath = path.join('database', `${id}.json`);
+            fs.writeFileSync(issuePath, JSON.stringify(body, null, 2));
+            console.log(`Wrote issue to ${issuePath}`);
+
+      - name: Sync database to main branch
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add database
+          git commit -m "Sync database"
+          git push
+
+      - name: Comment and close valid issue
+        if: success()
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const fs = require('fs');
+            const id = `CRE-${new Date().getFullYear()}-${36000+fs.readdirSync('database').length - 1}`;
+            const issue = context.payload.issue;
+            github.rest.issues.createComment({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Registered dad joke with ID ${id}`
+            });
+            github.rest.issues.update({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
+
+      - name: Comment and close invalid issue
+        if: failure()
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const issue = context.payload.issue;
+            github.rest.issues.createComment({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Closing issue due to the missing permission or invalid body.`
+            });
+            github.rest.issues.update({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
