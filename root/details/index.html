@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>CRSS Calculator</title>
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<meta property=og:type content=website>
+	<meta property=og:title content="CRSS Calculator">
+	<meta property=og:description content="Common RyotaK Scoring System Calculator">
+	<meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		body {
+			font-family: sans-serif;
+			height: 100%;
+		}
+		header.owsc {
+			background-color: black;
+			color: white;
+			padding: 20px 0;
+		}
+		header.nod {
+			background-color: #166ea9;
+			color: white;
+			padding: 40px 0;
+		}
+		.container {
+			margin: auto;
+			max-width: 800px;
+			padding: 0 10px;
+		}
+		.info, .infos {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+        .info > label {
+            font-weight: bold;
+        }
+
+		main {
+			padding-bottom:  120px;
+		}
+
+		footer {
+			bottom: 0;
+			width: 100%;
+			background-color: #333333;
+			color: white;
+			padding: 50px 0px 200px 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<header class=owsc>
+		<div class=container>
+			<h1>OWSC</h1>
+		</div>
+	</header>
+	<header class=nod>
+		<div class=container>
+			<h1>NATIONAL OYAJIGYAGU DATABASE</h1>
+		</div>
+	</header>
+	<main>
+		<div class=container>
+			<h2 id=cre_id>Common RyotaK Scoring System Calculator</h2>
+			<div class=infos>
+				<div class=info>
+					<label>発言者:</label>
+					<div id=author>読込中...</div>
+				</div>
+				<div class=info>
+					<label>該当テキスト:</label>
+					<div id=text>読込中...</div>
+				</div>
+				<div class=info>
+					<label>Vector String:</label>
+					<div id=vector_string>読込中...</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class=owsc>
+		<div class=container>
+			<h1>OWSC</h1>
+			<p>Open WorkShare Community</p>
+			<hr>
+			<p>Contribute: <a href=https://github.com/gnknzm/crss.gnknzm.net>gnknzm/crss.gnknzm.net</a></p>
+		</div>
+	</footer>
+	<script>
+        (async () => {
+            const id = new URLSearchParams(location.search).get('id');
+            if(!id) {
+                location.href = '/';
+                return;
+            }
+            document.getElementById('cre_id').textContent = id;
+            const resp = await fetch(`https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/${encodeURIComponent(id)}.json`);
+            if(resp.status !== 200) {
+                location.href = '/';
+                return;
+            }
+            const data = await resp.json();
+            document.title = `CRSS Calculator - ${data.id}`;
+            document.getElementById('author').textContent = data.author;
+            document.getElementById('text').textContent = data.text;
+            document.getElementById('vector_string').textContent = data.vector_string;
+        })();
+	</script>
+</body>
+</html>
