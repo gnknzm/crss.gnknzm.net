@@ -9,6 +9,9 @@ permissions:
   issues: write
   contents: write
 
+concurrency:
+  group: ${{ github.workflow }}
+
 jobs:
   register-dad-jokes:
     runs-on: ubuntu-latest
