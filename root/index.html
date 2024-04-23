@@ -89,6 +89,19 @@
 		a {
 			color: unset;
 		}
+
+		#save_button {
+			padding: 4px 25px;
+			border: #eaeded 1px solid;
+			margin: 3px 0;
+			float: right;
+			cursor: pointer;
+			user-select: none;
+			color: white;
+			font-weight: bold;
+			background-color: #004273;
+			border-color: #166ea9;
+		}
 	</style>
 </head>
 <body>
@@ -109,11 +122,11 @@
 			<div class=infos>
 				<div class=info>
 					発言者:
-					<input type=text placeholder="発言者">
+					<input id=author type=text placeholder="発言者">
 				</div>
 				<div class=info>
 					該当テキスト:
-					<input type=text placeholder="該当テキスト">
+					<input id=text type=text placeholder="該当テキスト">
 				</div>
 			</div>
 			<div>
@@ -122,6 +135,7 @@
 					<tr><td>Impact Subscore:</td><td id=impact_subscore></td></tr>
 					<tr><td>Exploitability Subscore:</td><td id=exploitability_subscore></td></tr>
 					<tr><td><b>Overall CRSS Score:</b></td><td id=overall_score></td></tr>
+					<tr><td><b>Vector String:</b></td><td id=vector_string></td></tr>
 				</table>
 			</div>
 			<section>
@@ -133,36 +147,37 @@
 					<form>
 						<div>
 							<h4>寒さへの影響 (SI)*</h4>
-							 <label><input value=0.000 type=radio name=SI><div class=selector>低: Low (SI:L)</div></label
-							><label><input value=0.275 type=radio name=SI><div class=selector>中: Medium (SI:M)</div></label
-							><label><input value=0.660 type=radio name=SI><div class=selector>高: High (SI:H)</div></label>
+							 <label><input value=0.000 type=radio name=SI data-text=L><div class=selector>低: Low (SI:L)</div></label
+							><label><input value=0.275 type=radio name=SI data-text=M><div class=selector>中: Medium (SI:M)</div></label
+							><label><input value=0.660 type=radio name=SI data-text=H><div class=selector>高: High (SI:H)</div></label>
 						</div>
 						<div>
 							<h4>ギャグの安直さ (GC)*</h4>
-							 <label><input value=0.000 type=radio name=GC><div class=selector>低: Low (GC:L)</div></label
-							><label><input value=0.275 type=radio name=GC><div class=selector>中: Medium (GC:M)</div></label
-							><label><input value=0.660 type=radio name=GC><div class=selector>高: High (GC:H)</div></label>
+							 <label><input value=0.000 type=radio name=GC data-text=L><div class=selector>低: Low (GC:L)</div></label
+							><label><input value=0.275 type=radio name=GC data-text=M><div class=selector>中: Medium (GC:M)</div></label
+							><label><input value=0.660 type=radio name=GC data-text=H><div class=selector>高: High (GC:H)</div></label>
 						</div>
 						<div>
 							<h4>ユーザーの予備知識 (UK)*</h4>
-							 <label><input value=0.704 type=radio name=UK><div class=selector>低: Low (UK:L)</div></label
-							><label><input value=0.560 type=radio name=UK><div class=selector>中: Medium (UK:M)</div></label
-							><label><input value=0.450 type=radio name=UK><div class=selector>高: High (UK:H)</div></label>
+							 <label><input value=0.704 type=radio name=UK data-text=L><div class=selector>低: Low (UK:L)</div></label
+							><label><input value=0.560 type=radio name=UK data-text=M><div class=selector>中: Medium (UK:M)</div></label
+							><label><input value=0.450 type=radio name=UK data-text=H><div class=selector>高: High (UK:H)</div></label>
 						</div>
 						<div>
 							<h4>伝達区分の制約 (TL)*</h4>
-							 <label><input value=0.710 type=radio name=TL><div class=selector>なし: None (TL:N)</div></label
-							><label><input value=0.350 type=radio name=TL><div class=selector>あり: Required (TL:R)</div></label>
+							 <label><input value=0.710 type=radio name=TL data-text=N><div class=selector>なし: None (TL:N)</div></label
+							><label><input value=0.350 type=radio name=TL data-text=R><div class=selector>あり: Required (TL:R)</div></label>
 						</div>
 						<div>
 							<h4>継続的なユーザーへの影響 (CA)*</h4>
-							 <label><input value=0.0 type=radio name=CA><div class=selector>低: Low (CA:L)</div></label
-							><label><input value=0.3 type=radio name=CA><div class=selector>中: Medium (CA:M)</div></label
-							><label><input value=0.5 type=radio name=CA><div class=selector>高: High (CA:H)</div></label>
+							 <label><input value=0.0 type=radio name=CA data-text=L><div class=selector>低: Low (CA:L)</div></label
+							><label><input value=0.3 type=radio name=CA data-text=M><div class=selector>中: Medium (CA:M)</div></label
+							><label><input value=0.5 type=radio name=CA data-text=H><div class=selector>高: High (CA:H)</div></label>
 						</div>
 					</form>
 				</div>
 			</section>
+			<div id=save_button>Save</div>
 		</div>
 	</main>
 	<footer class=owsc>
@@ -187,6 +202,22 @@
 			return '[Critical 緊急]';
 		};
 
+		const get_radio_text = name => {
+			const e = document.querySelector(`input[name=${name}]:checked`);
+			return e ? e.getAttribute('data-text') : '';
+		};
+
+		const vector = () => {
+			const f = document.getElementsByTagName('form')[0];
+			const SI = get_radio_text('SI');
+			const GC = get_radio_text('GC');
+			const UK = get_radio_text('UK');
+			const TL = get_radio_text('TL');
+			const CA = get_radio_text('CA');
+
+			return `CRSS:1.0/SI:${SI}/GC:${GC}/UK:${UK}/TL:${TL}/CA:${CA}`;
+		};
+
 		function calc() {
 			const f = document.getElementsByTagName('form')[0];
 			const SI = f.SI.value;
@@ -207,11 +238,32 @@
 
 			const overall_score = base_score + (10 - base_score) * f.CA.value;
 			document.getElementById('overall_score').textContent = format(overall_score) + ' ' + rate(round(overall_score));
+
+			const vector_string = vector();
+			document.getElementById('vector_string').textContent = vector_string;
+		}
+
+		function save() {
+			const author = document.getElementById('author').value;
+			const text = document.getElementById('text').value;
+			const vector_string = document.getElementById('vector_string').textContent;
+			const body = JSON.stringify({
+				author,
+				text,
+				vector_string,
+			});
+			const params = new URLSearchParams();
+			params.append('title', `Add ${text}`);
+			params.append('body', body);
+
+			const url = `https://github.com/gnknzm/crss.gnknzm.net/issues/new?${params.toString()}`;
+			window.open(url, '_blank');
 		}
 
 		document.addEventListener('DOMContentLoaded', calc);
 		for (e of document.getElementsByTagName('input'))
 			e.addEventListener('change', calc);
+		document.getElementById('save_button').addEventListener('click', save);
 	</script>
 </body>
 </html>
