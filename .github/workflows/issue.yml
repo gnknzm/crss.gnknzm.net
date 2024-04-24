@@ -1,5 +1,5 @@
 # Workflow file for registering dad jokes from issues
-name: Register dad jokes from issues
+name: Register oyajigyagu from issues
 
 on:
   issues:
@@ -15,6 +15,7 @@ concurrency:
 jobs:
   register-dad-jokes:
     runs-on: ubuntu-latest
+    if: ${{ startsWith(github.event.issue.title, "Add oyajigyagu ") }}
     steps:
       - name: Check permissions
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
@@ -72,7 +73,7 @@ jobs:
               issue_number: issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Registered dad joke with ID [${id}](https://crss.gnknzm.net/details/?id=${id})`
+              body: `Registered oyajigyagu with ID [${id}](https://crss.gnknzm.net/details/?id=${id})`
             });
             github.rest.issues.update({
               issue_number: issue.number,
