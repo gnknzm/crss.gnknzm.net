@@ -227,7 +227,7 @@
             }
             document.getElementById('cre_id').textContent = id;
             document.title = `CRSS Calculator - ${id}`;
-            const resp = await fetch(`https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/${encodeURIComponent(id)}.json`);
+            const resp = await fetch(`https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/${encodeURIComponent(id)}.json?${Math.random()}`);
             if (resp.status !== 200) {
                 location.href = '/';
                 return;
