@@ -1,0 +1,92 @@
+# Workflow file for registering dad jokes from issue labels
+name: Register oyajigyagu from issue labels
+
+on:
+  issues:
+    types:
+      - labeled
+
+
+permissions:
+  issues: write
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+
+jobs:
+  register-dad-jokes:
+    runs-on: ubuntu-latest
+    if: github.event.label.name == 'Oyajigyagu Approved'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@b80ff79f1755d06ba70441c368a6fe801f5f3a62
+
+      - name: Write dad joke to file
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            if (!fs.existsSync('database')) {
+              fs.mkdirSync('database');
+            }
+            const issue = context.payload.issue;
+            const id = `CRE-${new Date().getFullYear()}-${36000+fs.readdirSync('database').length}`;
+            const body = JSON.parse(issue.body);
+            if(!body.author || !body.text || !body.vector_string) {
+              throw new Error('Invalid issue body');
+            }
+            body.id = id;
+            const issuePath = path.join('database', `${id}.json`);
+            fs.writeFileSync(issuePath, JSON.stringify(body, null, 2));
+            console.log(`Wrote issue to ${issuePath}`);
+
+      - name: Sync database to main branch
+        run: |
+          git pull
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add database
+          git commit -m "Sync database"
+          git push
+
+      - name: Comment and close valid issue
+        if: success()
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const fs = require('fs');
+            const id = `CRE-${new Date().getFullYear()}-${36000+fs.readdirSync('database').length - 1}`;
+            const issue = context.payload.issue;
+            github.rest.issues.createComment({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Registered oyajigyagu with ID [${id}](https://crss.gnknzm.net/details/?id=${id})`
+            });
+            github.rest.issues.update({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
+
+      - name: Comment and close invalid issue
+        if: failure()
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        with:
+          script: |
+            const issue = context.payload.issue;
+            github.rest.issues.createComment({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Closing issue due to the invalid body.`
+            });
+            github.rest.issues.update({
+              issue_number: issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            });
