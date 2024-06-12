@@ -20,7 +20,7 @@ jobs:
     if: github.event.label.name == 'Oyajigyagu Approved'
     steps:
       - name: Checkout
-        uses: actions/checkout@b80ff79f1755d06ba70441c368a6fe801f5f3a62
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
 
       - name: Write dad joke to file
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
