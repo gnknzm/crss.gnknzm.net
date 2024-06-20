@@ -214,14 +214,16 @@
             const query = new URLSearchParams(location.search).get('q');
             document.getElementById('query').value = decodeURIComponent(query);
 
-            const end = await getLastCREinYear();
+            const database = JSON.parse(localStorage.getItem('database')) ?? [];
+            const end = await getLastCREinYear(2024, database.length);
             const allResps = await Promise.all(
                 new Array(end + 1)
+                .slice(database.length)
                 .keys()
                 .map(id => fetch(getDatabaseURL(2024, id)))
             );
             const allData = await Promise.all(allResps.map(resp => resp.json()));
-            localStorage.setItem('database', JSON.stringify(allData));
+            localStorage.setItem('database', JSON.stringify(database.concat(allData)));
             document.getElementById('query').addEventListener('input', updateQueryResult);
             updateQueryResult();
         })();
