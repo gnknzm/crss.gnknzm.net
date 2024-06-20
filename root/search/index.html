@@ -173,15 +173,35 @@
             return end;
         }
 
+        function updateQueryResult() {
+            const query = document.getElementById('query').value;
+
+            const newSearch = new URLSearchParams(location.search);
+            newSearch.set('q', encodeURIComponent(query));
+            history.replaceState(null, '', `${location.pathname}?${newSearch.toString()}`);
+
+            document.title = `CRSS Search - ${query}`;
+
+            const database = JSON.parse(localStorage.getItem("database")) ?? [];
+
+            const result = database.filter(crss => crss.author.includes(query) || crss.text.includes(query));
+
+            console.log(result);
+        }
+
         (async () => {
-            let end = await getLastCREinYear();
-            console.log(end);
-            let allResps = await Promise.all(
+            const query = new URLSearchParams(location.search).get('q');
+            document.getElementById('query').value = decodeURIComponent(query);
+
+            const end = await getLastCREinYear();
+            const allResps = await Promise.all(
                 new Array(end + 1)
                 .keys()
                 .map(id => fetch(getDatabaseURL(2024, id)))
             );
-            let allData = await Promise.all(allResps.map(resp => resp.json()));
+            const allData = await Promise.all(allResps.map(resp => resp.json()));
+            localStorage.setItem("database", JSON.stringify(allData));
+            document.getElementById('query').addEventListener('input', updateQueryResult);
         })();
     </script>
 </body>
