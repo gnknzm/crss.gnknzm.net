@@ -206,7 +206,10 @@
 
             const database = (JSON.parse(localStorage.getItem('database')) ?? [[]]).flat();
 
-            const result = database.filter(crss => crss.author.includes(query) || crss.text.includes(query));
+            const result = database.filter(crss =>
+                crss.author.toLowerCase().includes(query.toLowerCase()) ||
+                crss.text.toLowerCase().includes(query.toLowerCase())
+            );
             resultElement.replaceChild(createQueryResult(result), resultElement.children[0]);
         }
 
