@@ -126,7 +126,7 @@
                 </div>
             </div>
             <div id=result>
-                読み込み中...
+                <p>読み込み中...</p>
             </div>
         </div>
     </main>
@@ -150,7 +150,7 @@
                     yield fetch(getDatabaseURL(year, start + (1 << i)));
                 }
             }
-            for await (let resp of getRequestPromises()) {
+            for await (const resp of getRequestPromises()) {
                 if (resp.status !== 200) {
                     break;
                 }
@@ -159,18 +159,33 @@
 
             let end = start;
             while (diff_power--) {
-                let resp = await fetch(getDatabaseURL(year, end));
+                const resp = await fetch(getDatabaseURL(year, end));
                 if (resp.status === 200) {
                     end += 1 << diff_power;
                 } else {
                     end -= 1 << diff_power;
                 }
             }
-            let resp = await fetch(getDatabaseURL(year, end));
+            const resp = await fetch(getDatabaseURL(year, end));
             if (resp.status !== 200) {
                 end--;
             }
             return end;
+        }
+
+        function createQueryResult(result) {
+            const div = document.createElement('div');
+            for (const crss of result) {
+                const p = document.createElement('p');
+
+                const anker = document.createElement('a');
+                anker.textContent = `${crss.author}: ${crss.text}`;
+                anker.href = `/detail?id=${encodeURIComponent(crss.id)}`;
+                p.appendChild(anker);
+
+                div.appendChild(p);
+            }
+            return div;
         }
 
         function updateQueryResult() {
@@ -180,13 +195,19 @@
             newSearch.set('q', encodeURIComponent(query));
             history.replaceState(null, '', `${location.pathname}?${newSearch.toString()}`);
 
+            const resultElement = document.getElementById('result');
+            if (!query) {
+                document.title = `CRSS Search`;
+                resultElement.replaceChild(document.createElement('p'), resultElement.children[0]);
+                return;
+            }
+
             document.title = `CRSS Search - ${query}`;
 
-            const database = JSON.parse(localStorage.getItem("database")) ?? [];
+            const database = JSON.parse(localStorage.getItem('database')) ?? [];
 
             const result = database.filter(crss => crss.author.includes(query) || crss.text.includes(query));
-
-            console.log(result);
+            resultElement.replaceChild(createQueryResult(result), resultElement.children[0]);
         }
 
         (async () => {
@@ -200,8 +221,9 @@
                 .map(id => fetch(getDatabaseURL(2024, id)))
             );
             const allData = await Promise.all(allResps.map(resp => resp.json()));
-            localStorage.setItem("database", JSON.stringify(allData));
+            localStorage.setItem('database', JSON.stringify(allData));
             document.getElementById('query').addEventListener('input', updateQueryResult);
+            updateQueryResult();
         })();
     </script>
 </body>
