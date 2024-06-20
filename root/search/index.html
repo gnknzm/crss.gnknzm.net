@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRSS Search</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta property=og:type content=website>
+    <meta property=og:title content="CRSS Calculator">
+    <meta property=og:description content="Common RyotaK Scoring System Calculator">
+    <meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100%;
+        }
+
+        header.owsc {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header.nod {
+            background-color: #166ea9;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 800px;
+            padding: 0 10px;
+        }
+
+        .info,
+        .infos {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info>label {
+            font-weight: bold;
+        }
+
+        main {
+            padding-bottom: 120px;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #333333;
+            color: white;
+            padding: 50px 0px 200px 0px;
+        }
+
+        #severity {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .critical {
+            color: #a9a9a9;
+            background-color: black;
+        }
+
+        .high {
+            color: #fff;
+            background-color: #F87F39;
+        }
+
+        .medium {
+            color: black;
+            background-color: #ec971f;
+        }
+
+        .low {
+            color: black;
+            background-color: #f2cc0c;
+        }
+
+        .none {
+            color: black;
+            background-color: darkgrey;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        h1 > a {
+            text-decoration-line: inherit;
+        }
+
+        input[type=text] {
+            font-size: 15pt;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=owsc>
+        <div class=container>
+            <h1><a href=/>OWSC</a></h1>
+        </div>
+    </header>
+    <header class=nod>
+        <div class=container>
+            <h1><a href=/>NATIONAL OYAJIGYAGU DATABASE</a></h1>
+        </div>
+    </header>
+    <main>
+        <div class=container>
+            <div class=infos>
+                <div class=info>
+                    <input id=query type=text placeholder="検索...">
+                </div>
+            </div>
+            <div id=result>
+                読み込み中...
+            </div>
+        </div>
+    </main>
+    <footer class=owsc>
+        <div class=container>
+            <h1><a href=/>OWSC</a></h1>
+            <p>Open WorkShare Community</p>
+            <hr>
+            <p>Contribute: <a href=https://github.com/gnknzm/crss.gnknzm.net>gnknzm/crss.gnknzm.net</a></p>
+        </div>
+    </footer>
+    <script>
+        function getDatabaseURL(year, id) {
+            return `https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/CRE-${year}-${id + 36000}.json?${Math.random()}`;
+        }
+
+        async function getLastCREinYear(year=2024, start = 0) {
+            let diff_power = 0;
+            function* getRequestPromises() {
+                for(let i = 0; ; i++) {
+                    yield fetch(getDatabaseURL(year, start + (1 << i)));
+                }
+            }
+            for await (let resp of getRequestPromises()) {
+                if (resp.status !== 200) {
+                    break;
+                }
+                diff_power++;
+            }
+
+            let end = start;
+            while (diff_power--) {
+                let resp = await fetch(getDatabaseURL(year, end));
+                if (resp.status === 200) {
+                    end += 1 << diff_power;
+                } else {
+                    end -= 1 << diff_power;
+                }
+            }
+            let resp = await fetch(getDatabaseURL(year, end));
+            if (resp.status !== 200) {
+                end--;
+            }
+            return end;
+        }
+
+        (async () => {
+            let end = await getLastCREinYear();
+            console.log(end);
+            let allResps = await Promise.all(
+                new Array(end + 1)
+                .keys()
+                .map(id => fetch(getDatabaseURL(2024, id)))
+            );
+            let allData = await Promise.all(allResps.map(resp => resp.json()));
+        })();
+    </script>
+</body>
+
+</html>
