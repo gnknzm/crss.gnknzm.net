@@ -143,7 +143,7 @@
             return `https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/CRE-${year}-${id + 36000}.json?${Math.random()}`;
         }
 
-        async function getLastCREinYear(year=2024, start = 0) {
+        async function getLastCREinYear(year, start) {
             let diff_power = 0;
             function* getRequestPromises() {
                 for(let i = 0; ; i++) {
@@ -204,7 +204,7 @@
 
             document.title = `CRSS Search - ${query}`;
 
-            const database = JSON.parse(localStorage.getItem('database')) ?? [];
+            const database = (JSON.parse(localStorage.getItem('database')) ?? [[]]).flat();
 
             const result = database.filter(crss => crss.author.includes(query) || crss.text.includes(query));
             resultElement.replaceChild(createQueryResult(result), resultElement.children[0]);
@@ -215,15 +215,21 @@
             document.getElementById('query').value = decodeURIComponent(query);
 
             const database = JSON.parse(localStorage.getItem('database')) ?? [];
-            const end = await getLastCREinYear(2024, database.length);
-            const allResps = await Promise.all(
-                new Array(end + 1)
-                .slice(database.length)
-                .keys()
-                .map(id => fetch(getDatabaseURL(2024, id)))
-            );
-            const allData = await Promise.all(allResps.map(resp => resp.json()));
-            localStorage.setItem('database', JSON.stringify(database.concat(allData)));
+            const startYear = 2024 + database.length;
+            const endYear = new Date().getFullYear();
+            for (let i = 0; i <= endYear - startYear; i++) {
+                const year = startYear + i;
+                const end = await getLastCREinYear(year, database.length);
+                const allResps = await Promise.all(
+                    new Array(end + 1)
+                    .slice(database.length)
+                    .keys()
+                    .map(id => fetch(getDatabaseURL(year, id)))
+                );
+                const allData = await Promise.all(allResps.map(resp => resp.json()));
+                database[i] = (database[i] ?? []).concat(allData);
+            }
+            localStorage.setItem('database', JSON.stringify(database));
             document.getElementById('query').addEventListener('input', updateQueryResult);
             updateQueryResult();
         })();
