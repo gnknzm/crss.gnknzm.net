@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRSS Search</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta property=og:type content=website>
+    <meta property=og:title content="CRSS Calculator">
+    <meta property=og:description content="Common RyotaK Scoring System Calculator">
+    <meta property=og:site_name content="NATIONAL OYAJIGYAGU DATABASE">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100%;
+        }
+
+        header.owsc {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header.nod {
+            background-color: #166ea9;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 800px;
+            padding: 0 10px;
+        }
+
+        .info,
+        .infos {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info>label {
+            font-weight: bold;
+        }
+
+        main {
+            padding-bottom: 120px;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #333333;
+            color: white;
+            padding: 50px 0px 200px 0px;
+        }
+
+        #severity {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .critical {
+            color: #a9a9a9;
+            background-color: black;
+        }
+
+        .high {
+            color: #fff;
+            background-color: #F87F39;
+        }
+
+        .medium {
+            color: black;
+            background-color: #ec971f;
+        }
+
+        .low {
+            color: black;
+            background-color: #f2cc0c;
+        }
+
+        .none {
+            color: black;
+            background-color: darkgrey;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        h1 > a {
+            text-decoration-line: inherit;
+        }
+
+        input[type=text] {
+            font-size: 15pt;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=owsc>
+        <div class=container>
+            <h1><a href=/>OWSC</a></h1>
+        </div>
+    </header>
+    <header class=nod>
+        <div class=container>
+            <h1><a href=/>NATIONAL OYAJIGYAGU DATABASE</a></h1>
+        </div>
+    </header>
+    <main>
+        <div class=container>
+            <div class=infos>
+                <div class=info>
+                    <input id=query type=text placeholder="検索...">
+                </div>
+            </div>
+            <div id=result>
+                <p>読み込み中...</p>
+            </div>
+        </div>
+    </main>
+    <footer class=owsc>
+        <div class=container>
+            <h1><a href=/>OWSC</a></h1>
+            <p>Open WorkShare Community</p>
+            <hr>
+            <p>Contribute: <a href=https://github.com/gnknzm/crss.gnknzm.net>gnknzm/crss.gnknzm.net</a></p>
+        </div>
+    </footer>
+    <script>
+        function getDatabaseURL(year, id) {
+            return `https://raw.githubusercontent.com/gnknzm/crss.gnknzm.net/master/database/CRE-${year}-${id + 36000}.json?${Math.random()}`;
+        }
+
+        async function getLastCREinYear(year, start) {
+            let diff_power = 0;
+            function* getRequestPromises() {
+                for(let i = 0; ; i++) {
+                    yield fetch(getDatabaseURL(year, start + (1 << i)));
+                }
+            }
+            for await (const resp of getRequestPromises()) {
+                if (resp.status !== 200) {
+                    break;
+                }
+                diff_power++;
+            }
+
+            let end = start;
+            while (diff_power--) {
+                const resp = await fetch(getDatabaseURL(year, end));
+                if (resp.status === 200) {
+                    end += 1 << diff_power;
+                } else {
+                    end -= 1 << diff_power;
+                }
+            }
+            const resp = await fetch(getDatabaseURL(year, end));
+            if (resp.status !== 200) {
+                end--;
+            }
+            return end;
+        }
+
+        function createQueryResult(result) {
+            const div = document.createElement('div');
+            for (const crss of result) {
+                const p = document.createElement('p');
+
+                const anker = document.createElement('a');
+                anker.textContent = `${crss.author}: ${crss.text}`;
+                anker.href = `/detail?id=${encodeURIComponent(crss.id)}`;
+                p.appendChild(anker);
+
+                div.appendChild(p);
+            }
+            return div;
+        }
+
+        function updateQueryResult() {
+            const query = document.getElementById('query').value;
+
+            const newSearch = new URLSearchParams(location.search);
+            newSearch.set('q', encodeURIComponent(query));
+            history.replaceState(null, '', `${location.pathname}?${newSearch.toString()}`);
+
+            const resultElement = document.getElementById('result');
+            if (!query) {
+                document.title = `CRSS Search`;
+                resultElement.replaceChild(document.createElement('p'), resultElement.children[0]);
+                return;
+            }
+
+            document.title = `CRSS Search - ${query}`;
+
+            const database = (JSON.parse(localStorage.getItem('database')) ?? [[]]).flat();
+
+            const result = database.filter(crss =>
+                crss.author.toLowerCase().includes(query.toLowerCase()) ||
+                crss.text.toLowerCase().includes(query.toLowerCase())
+            );
+            resultElement.replaceChild(createQueryResult(result), resultElement.children[0]);
+        }
+
+        (async () => {
+            const query = new URLSearchParams(location.search).get('q');
+            document.getElementById('query').value = decodeURIComponent(query);
+
+            const database = JSON.parse(localStorage.getItem('database')) ?? [];
+            const startYear = 2024 + database.length;
+            const endYear = new Date().getFullYear();
+            for (let i = 0; i <= endYear - startYear; i++) {
+                const year = startYear + i;
+                const end = await getLastCREinYear(year, database.length);
+                const allResps = await Promise.all(
+                    new Array(end + 1)
+                    .slice(database.length)
+                    .keys()
+                    .map(id => fetch(getDatabaseURL(year, id)))
+                );
+                const allData = await Promise.all(allResps.map(resp => resp.json()));
+                database[i] = (database[i] ?? []).concat(allData);
+            }
+            localStorage.setItem('database', JSON.stringify(database));
+            document.getElementById('query').addEventListener('input', updateQueryResult);
+            updateQueryResult();
+        })();
+    </script>
+</body>
+
+</html>
