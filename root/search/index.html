@@ -180,7 +180,7 @@
 
                 const anker = document.createElement('a');
                 anker.textContent = `${crss.author}: ${crss.text}`;
-                anker.href = `/detail?id=${encodeURIComponent(crss.id)}`;
+                anker.href = `/details/?id=${encodeURIComponent(crss.id)}`;
                 p.appendChild(anker);
 
                 div.appendChild(p);
@@ -214,7 +214,7 @@
         }
 
         (async () => {
-            const query = new URLSearchParams(location.search).get('q');
+            const query = new URLSearchParams(location.search).get('q') ?? "";
             document.getElementById('query').value = decodeURIComponent(query);
 
             const database = JSON.parse(localStorage.getItem('database')) ?? [];
