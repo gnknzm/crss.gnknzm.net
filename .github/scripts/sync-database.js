@@ -34,7 +34,8 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 try {
     configureGit();
     checkoutBranch('database');
-    const id = `CRE-${new Date().getFullYear()}-${36000 + fs.readdirSync('.').length}`;
+    const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
+    const id = `CRE-${new Date().getFullYear()}-${36000 + files.length}`;
     const body = JSON.parse(issue.body);
     if (!body.author || !body.text || !body.vector_string) {
         throw new Error('Invalid issue body');
@@ -43,7 +44,7 @@ try {
     fs.writeFileSync(`${id}.json`, JSON.stringify(body, null, 2));
     console.log(`Wrote issue to ${id}.json`);
     commit();
-    const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
+    files.push(`${id}.json`);
     const all = files.map(file => JSON.parse(fs.readFileSync(file)));
     checkoutBranch('generated');
     fs.writeFileSync('all.json', JSON.stringify(all, null, 2));
