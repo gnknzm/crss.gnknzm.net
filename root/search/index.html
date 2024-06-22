@@ -160,7 +160,7 @@
                 const p = document.createElement('p');
 
                 const anker = document.createElement('a');
-                anker.textContent = `${crss.author}: ${crss.text}`;
+                anker.textContent = `[${crss.id}] ${crss.author}: ${crss.text}`;
                 anker.href = `/details/?id=${encodeURIComponent(crss.id)}`;
                 p.appendChild(anker);
 
