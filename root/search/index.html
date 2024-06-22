@@ -167,15 +167,14 @@
             history.replaceState(null, '', `${location.pathname}?${newSearch.toString()}`);
 
             const resultElement = document.getElementById('result');
+            const database = (JSON.parse(localStorage.getItem('database')) ?? [[]]).flat();
             if (!query) {
                 document.title = `CRSS Search`;
-                resultElement.replaceChild(document.createElement('p'), resultElement.children[0]);
+                resultElement.replaceChild(createQueryResult(database), resultElement.children[0]);
                 return;
             }
 
             document.title = `CRSS Search - ${query}`;
-
-            const database = (JSON.parse(localStorage.getItem('database')) ?? [[]]).flat();
 
             const result = database.filter(crss =>
                 crss.author.toLowerCase().includes(query.toLowerCase()) ||
