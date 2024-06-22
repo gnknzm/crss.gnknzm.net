@@ -9,13 +9,13 @@ function configureGit() {
 }
 
 function checkoutBranch(branch) {
+    cp.execSync('git pull');
     try {
         cp.execFileSync('git', ['checkout', branch]);
     } catch (e) {
         cp.execFileSync('git', ['checkout', '-b', branch]);
         cp.execFileSync('git', ['push', '-u', 'origin', branch]);
     }
-    cp.execSync('git pull');
 }
 
 function commit() {
