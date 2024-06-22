@@ -18,10 +18,13 @@ function checkoutBranch(branch) {
     cp.execSync('git pull');
 }
 
-function sync() {
+function commit() {
     cp.execSync('git add .');
-    cp.execSync('git commit -m "Sync database"', { cwd: 'database' });
-    cp.execSync('git push --all', { cwd: 'database' });
+    cp.execSync('git commit -m "Sync database"');
+}
+
+function push() {
+    cp.execSync('git push --all');
 }
 const owner = process.env.GITHUB_REPOSITORY_OWNER;
 const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
@@ -39,11 +42,13 @@ try {
     body.id = id;
     fs.writeFileSync(`${id}.json`, JSON.stringify(body, null, 2));
     console.log(`Wrote issue to ${id}.json`);
+    commit();
     const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
     const all = files.map(file => JSON.parse(fs.readFileSync(file)));
     checkoutBranch('generated');
     fs.writeFileSync('all.json', JSON.stringify(all, null, 2));
-    //sync();
+    commit();
+    push();
     octokit.rest.issues.createComment({
         issue_number: issue.number,
         owner: owner,
