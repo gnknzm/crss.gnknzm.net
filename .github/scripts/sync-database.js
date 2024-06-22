@@ -34,7 +34,7 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 try {
     configureGit();
     checkoutBranch('database');
-    const id = `CRE-${new Date().getFullYear()}-${36000 + fs.readdirSync('database').length}`;
+    const id = `CRE-${new Date().getFullYear()}-${36000 + fs.readdirSync('.').length}`;
     const body = JSON.parse(issue.body);
     if (!body.author || !body.text || !body.vector_string) {
         throw new Error('Invalid issue body');
