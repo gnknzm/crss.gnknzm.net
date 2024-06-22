@@ -34,6 +34,14 @@
 			max-width: 800px;
 			padding: 0 10px;
 		}
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header a {
+			text-decoration-line: none;
+		}
 		.selector {
 			padding: 0px 10px;
 			color: black;
@@ -106,8 +114,9 @@
 </head>
 <body>
 	<header class=owsc>
-		<div class=container>
+		<div class="container header">
 			<h1>OWSC</h1>
+            <h2><a href=/search/>Search</a></h2>
 		</div>
 	</header>
 	<header class=nod>

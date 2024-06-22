@@ -39,6 +39,15 @@
             padding: 0 10px;
         }
 
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header a {
+            text-decoration-line: none;
+		}
+
         .info,
         .infos {
             margin-top: 10px;
@@ -104,8 +113,9 @@
 
 <body>
     <header class=owsc>
-        <div class=container>
+        <div class="container header">
             <h1><a href=/>OWSC</a></h1>
+            <h2><a href=/search/>Search</a></h2>
         </div>
     </header>
     <header class=nod>
@@ -118,8 +128,7 @@
             <h2 id=cre_id>Common RyotaK Scoring System Calculator</h2>
             <div class=infos>
                 <div class=info>
-                    <!-- 僕はRyotaK度じゃないと思うんですが、RyotaK度じゃないとダメらしいです (2024/04/23: RyotaK) -->
-                    <label>RyotaK度:</label>
+                    <label>CRSSスコア:</label>
                     <div><label id=severity>読込中...</label></div>
                 </div>
                 <div class=info>

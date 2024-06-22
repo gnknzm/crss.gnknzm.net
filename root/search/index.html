@@ -39,6 +39,15 @@
             padding: 0 10px;
         }
 
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header a {
+            text-decoration-line: none;
+		}
+
         .info,
         .infos {
             margin-top: 10px;
@@ -109,8 +118,9 @@
 
 <body>
     <header class=owsc>
-        <div class=container>
+        <div class="container header">
             <h1><a href=/>OWSC</a></h1>
+            <h2><a href=/search/>Search</a></h2>
         </div>
     </header>
     <header class=nod>
