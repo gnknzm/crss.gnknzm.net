@@ -13,6 +13,7 @@ function checkoutBranch(branch) {
         cp.execFileSync('git', ['checkout', branch]);
     } catch (e) {
         cp.execFileSync('git', ['checkout', '-b', branch]);
+        cp.execFileSync('git', ['push', '-u', 'origin', branch]);
     }
     cp.execSync('git pull');
 }
