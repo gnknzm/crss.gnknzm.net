@@ -198,6 +198,7 @@
             document.getElementById('query').value = decodeURIComponent(query);
 
             const database = await retrieveDatabase();
+            database.sort((a, b) => b.id.localeCompare(a.id));
             localStorage.setItem('database', JSON.stringify(database));
             document.getElementById('query').addEventListener('input', updateQueryResult);
             updateQueryResult();
