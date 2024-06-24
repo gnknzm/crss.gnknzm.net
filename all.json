@@ -400,5 +400,11 @@
     "text": "(ハエを捕獲したことに関して)はえー",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36066"
+  },
+  {
+    "author": "kory33",
+    "text": "ババンのBun",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36067"
   }
 ]
