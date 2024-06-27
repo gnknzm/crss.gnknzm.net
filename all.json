@@ -472,5 +472,11 @@
     "text": "ナイト・オブ・内通",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36078"
+  },
+  {
+    "author": "KisaragiEffective",
+    "text": "キュウコンの求婚",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:R/CA:L",
+    "id": "CRE-2024-36079"
   }
 ]
