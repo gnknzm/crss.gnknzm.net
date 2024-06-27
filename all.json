@@ -502,5 +502,11 @@
     "text": "トークンだけ届くん",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:R/CA:H",
     "id": "CRE-2024-36083"
+  },
+  {
+    "author": "siro256",
+    "text": "Authorの長",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36084"
   }
 ]
