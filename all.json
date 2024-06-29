@@ -520,5 +520,11 @@
     "text": "椅子を割って居座る",
     "vector_string": "CRSS:1.0/SI:M/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36086"
+  },
+  {
+    "author": "sorausa",
+    "text": "一種のIssue",
+    "vector_string": "CRSS:1.0/SI:M/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36087"
   }
 ]
