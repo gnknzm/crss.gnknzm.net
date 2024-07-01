@@ -598,5 +598,11 @@
     "text": "互換性がなくてうごかんわ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36099"
+  },
+  {
+    "author": "RyotaK",
+    "text": "キリ番だからキリッとしたダジャレで行きたい",
+    "vector_string": "CRSS:1.0/SI:M/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36100"
   }
 ]
