@@ -544,5 +544,11 @@
     "text": "汚染地ありすぎておセンチ",
     "vector_string": "CRSS:1.0/SI:L/GC:M/UK:M/TL:N/CA:M",
     "id": "CRE-2024-36090"
+  },
+  {
+    "author": "RyotaK",
+    "text": "ブレブレのメンブレン",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36091"
   }
 ]
