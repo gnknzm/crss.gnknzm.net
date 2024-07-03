@@ -622,5 +622,11 @@
     "text": "ベッドをべべっとね",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36103"
+  },
+  {
+    "author": "yanorei32",
+    "text": "急を要するQueue",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36104"
   }
 ]
