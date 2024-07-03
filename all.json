@@ -628,5 +628,11 @@
     "text": "急を要するQueue",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36104"
+  },
+  {
+    "author": "kory33",
+    "text": "グレたポスグレ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36105"
   }
 ]
