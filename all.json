@@ -712,5 +712,11 @@
     "text": "思想が失踪",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36118"
+  },
+  {
+    "author": "Lenqth",
+    "text": "Torrentで取れんと？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:H",
+    "id": "CRE-2024-36119"
   }
 ]
