@@ -718,5 +718,11 @@
     "text": "Torrentで取れんと？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:H",
     "id": "CRE-2024-36119"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "RyotaK「消化が良いことが知られている」 lemoncmd「しょうかなぁ」",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36120"
   }
 ]
