@@ -730,5 +730,11 @@
     "text": "nanoなの！？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36121"
+  },
+  {
+    "author": "yanorei32",
+    "text": "/var を分けるvarいもあるね",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:R/CA:L",
+    "id": "CRE-2024-36122"
   }
 ]
