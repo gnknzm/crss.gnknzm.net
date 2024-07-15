@@ -724,5 +724,11 @@
     "text": "RyotaK「消化が良いことが知られている」 lemoncmd「しょうかなぁ」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36120"
+  },
+  {
+    "author": "RyotaK",
+    "text": "nanoなの！？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36121"
   }
 ]
