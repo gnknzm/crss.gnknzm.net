@@ -748,5 +748,11 @@
     "text": "罵倒されたら抜刀",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36124"
+  },
+  {
+    "author": "kory33",
+    "text": "ノギスを知らずギスギス",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36125"
   }
 ]
