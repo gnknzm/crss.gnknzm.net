@@ -760,5 +760,11 @@
     "text": "Blenderを連打！w",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36126"
+  },
+  {
+    "author": "yanorei32",
+    "text": "(yanknvim) FortiGate取りに行かないと (yanorei32) やーい放置Gate",
+    "vector_string": "CRSS:1.0/SI:M/GC:H/UK:M/TL:N/CA:H",
+    "id": "CRE-2024-36127"
   }
 ]
