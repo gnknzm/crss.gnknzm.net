@@ -778,5 +778,11 @@
     "text": "ハヤシライスを生やしてる人がおるな",
     "vector_string": "CRSS:1.0/SI:M/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36129"
+  },
+  {
+    "author": "RyotaK",
+    "text": "あらあら。アラートだけに。",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36130"
   }
 ]
