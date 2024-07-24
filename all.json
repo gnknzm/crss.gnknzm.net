@@ -790,5 +790,11 @@
     "text": "そらソーラー",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36131"
+  },
+  {
+    "author": "RyotaK",
+    "text": "お空が泣いてる 暗い(cry)し",
+    "vector_string": "CRSS:1.0/SI:M/GC:L/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36132"
   }
 ]
