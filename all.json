@@ -808,5 +808,11 @@
     "text": "切り分けに失敗すると胃がキリキリするからね",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36134"
+  },
+  {
+    "author": "RyotaK",
+    "text": "電話にでんわってなっちゃうからね",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36135"
   }
 ]
