@@ -838,5 +838,11 @@
     "text": "ネット右翼が熱湯浴",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36139"
+  },
+  {
+    "author": "yukatayu",
+    "text": "コーラを凍らせる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36140"
   }
 ]
