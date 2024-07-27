@@ -880,5 +880,11 @@
     "text": "停電してんでい！",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36146"
+  },
+  {
+    "author": "RyotaK",
+    "text": "サバ缶を捌かん！",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36147"
   }
 ]
