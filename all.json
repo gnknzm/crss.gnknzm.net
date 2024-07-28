@@ -1000,5 +1000,11 @@
     "text": "戦車を洗車",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36166"
+  },
+  {
+    "author": "fish0111",
+    "text": "戦艦は旋回せんかい？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36167"
   }
 ]
