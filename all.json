@@ -1018,5 +1018,11 @@
     "text": "サバ管の鯖缶",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36169"
+  },
+  {
+    "author": "yanorei32",
+    "text": "毛布のmorph",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36170"
   }
 ]
