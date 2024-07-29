@@ -1066,5 +1066,11 @@
     "text": "情緒が不安定、冗長化が必要だ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36177"
+  },
+  {
+    "author": "Lenqth",
+    "text": "上長が情緒不安定",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36178"
   }
 ]
