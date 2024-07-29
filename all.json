@@ -1090,5 +1090,11 @@
     "text": "nanoなの？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36181"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "異臭がするissue",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36182"
   }
 ]
