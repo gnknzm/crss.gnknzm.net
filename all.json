@@ -1108,5 +1108,11 @@
     "text": "大金を持って退勤",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36184"
+  },
+  {
+    "author": "RyotaK",
+    "text": "パッチパチのApache",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36185"
   }
 ]
