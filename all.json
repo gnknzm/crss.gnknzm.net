@@ -1222,5 +1222,11 @@
     "text": "シャークの咀嚼",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36203"
+  },
+  {
+    "author": "yu-32",
+    "text": "シャークのしゃっくり",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36204"
   }
 ]
