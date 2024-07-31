@@ -1570,5 +1570,11 @@
     "text": "バイトのバイト。(切削工具にされる)",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36261"
+  },
+  {
+    "author": "yanorei32",
+    "text": "えんじ色の園児服",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36262"
   }
 ]
