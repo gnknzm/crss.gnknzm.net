@@ -2092,5 +2092,11 @@
     "text": "保存(オゾン)層の破壊",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36348"
+  },
+  {
+    "author": "yanorei32",
+    "text": "積層痕の倉庫の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36349"
   }
 ]
