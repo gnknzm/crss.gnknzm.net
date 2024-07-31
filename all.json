@@ -1798,5 +1798,11 @@
     "text": "肩が硬い",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36299"
+  },
+  {
+    "author": "yanorei32",
+    "text": "首を吊るツル",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36300"
   }
 ]
