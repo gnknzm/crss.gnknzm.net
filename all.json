@@ -1588,5 +1588,11 @@
     "text": "寿司の牛の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36264"
+  },
+  {
+    "author": "yanorei32",
+    "text": "白(Shiro)の色(Iro)の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36265"
   }
 ]
