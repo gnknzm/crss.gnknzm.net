@@ -1972,5 +1972,11 @@
     "text": "シージのCG",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36328"
+  },
+  {
+    "author": "yanorei32",
+    "text": "ただで得た米、無銭米",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36329"
   }
 ]
