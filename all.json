@@ -1600,5 +1600,11 @@
     "text": "ディスコードのディスクの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36266"
+  },
+  {
+    "author": "yanorei32",
+    "text": "アセットの窃盗",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36267"
   }
 ]
