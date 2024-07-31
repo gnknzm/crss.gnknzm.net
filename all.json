@@ -1582,5 +1582,11 @@
     "text": "りょたっくのオタクの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
     "id": "CRE-2024-36263"
+  },
+  {
+    "author": "yanorei32",
+    "text": "寿司の牛の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36264"
   }
 ]
