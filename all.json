@@ -1516,5 +1516,11 @@
     "text": "鷲をワシワシ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36252"
+  },
+  {
+    "author": "yanorei32",
+    "text": "水天宮の天狗の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36253"
   }
 ]
