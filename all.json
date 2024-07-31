@@ -1732,5 +1732,11 @@
     "text": "コーヒーを乞う日々",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36288"
+  },
+  {
+    "author": "yanorei32",
+    "text": "スイッチの不一致",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36289"
   }
 ]
