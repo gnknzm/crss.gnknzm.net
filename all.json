@@ -1642,5 +1642,11 @@
     "text": "clara-3772「問題のあるティッシュ」 yanorei32「tissue...」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36273"
+  },
+  {
+    "author": "yanorei32",
+    "text": "異臭のするTissue",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36274"
   }
 ]
