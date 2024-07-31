@@ -1936,5 +1936,11 @@
     "text": "無線LANのただ乗り、無銭LAN",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36322"
+  },
+  {
+    "author": "yanorei32",
+    "text": "理工は利口だ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36323"
   }
 ]
