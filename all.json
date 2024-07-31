@@ -1948,5 +1948,11 @@
     "text": "段違いの団地",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36324"
+  },
+  {
+    "author": "yanorei32",
+    "text": "エンコーダーの円交の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36325"
   }
 ]
