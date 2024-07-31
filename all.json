@@ -2104,5 +2104,11 @@
     "text": "シフト（労働）をシフト（ずらす）",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36350"
+  },
+  {
+    "author": "igameta",
+    "text": "目がメガチカチカする",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36351"
   }
 ]
