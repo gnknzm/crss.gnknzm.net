@@ -1330,5 +1330,11 @@
     "text": "秀水園の止水弁",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36221"
+  },
+  {
+    "author": "yanorei32",
+    "text": "債権の再建",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36222"
   }
 ]
