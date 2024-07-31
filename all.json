@@ -1792,5 +1792,11 @@
     "text": "時期にひじき煮る",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36298"
+  },
+  {
+    "author": "yanorei32",
+    "text": "肩が硬い",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36299"
   }
 ]
