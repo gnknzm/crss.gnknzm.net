@@ -1360,5 +1360,11 @@
     "text": "インプレッサ in pressure",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36226"
+  },
+  {
+    "author": "yanorei32",
+    "text": "ブカブカの服着た部下",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36227"
   }
 ]
