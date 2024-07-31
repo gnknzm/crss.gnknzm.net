@@ -1726,5 +1726,11 @@
     "text": "インカムつけて良いんか？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36287"
+  },
+  {
+    "author": "yanorei32",
+    "text": "コーヒーを乞う日々",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36288"
   }
 ]
