@@ -1654,5 +1654,11 @@
     "text": "RyotaK「どうしてこんなことに...」 lemoncmd「同志の部分」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36275"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "CSSのイエスの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36276"
   }
 ]
