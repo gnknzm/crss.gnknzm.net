@@ -1660,5 +1660,11 @@
     "text": "CSSのイエスの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36276"
+  },
+  {
+    "author": "yanorei32",
+    "text": "アセトンのアセット",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36277"
   }
 ]
