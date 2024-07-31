@@ -1384,5 +1384,11 @@
     "text": "目的地は敵地",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36230"
+  },
+  {
+    "author": "yanorei32",
+    "text": "インセキュアな隕石や！",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36231"
   }
 ]
