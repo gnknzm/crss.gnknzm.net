@@ -1630,5 +1630,11 @@
     "text": "超高確率の\"ﾁｮｳｺｳ\"の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36271"
+  },
+  {
+    "author": "yanorei32",
+    "text": "心配のパイの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36272"
   }
 ]
