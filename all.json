@@ -1264,5 +1264,11 @@
     "text": "滑り台ですべりたい",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36210"
+  },
+  {
+    "author": "kory33",
+    "text": "ビキビキのYubiKey",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36211"
   }
 ]
