@@ -1540,5 +1540,11 @@
     "text": "プリンターのリンターの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36256"
+  },
+  {
+    "author": "yanorei32",
+    "text": "銅線の導線の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36257"
   }
 ]
