@@ -1204,5 +1204,11 @@
     "text": "田端でバタバタ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36200"
+  },
+  {
+    "author": "yu-32",
+    "text": "リムジン乗せられるのりふじん",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36201"
   }
 ]
