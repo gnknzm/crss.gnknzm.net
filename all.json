@@ -1894,5 +1894,11 @@
     "text": "Q. コンセントで感電したよ。どこ地方？ A. 関西地方。関電なので。",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36315"
+  },
+  {
+    "author": "yanorei32",
+    "text": "不敬な婦警",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36316"
   }
 ]
