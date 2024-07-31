@@ -2086,5 +2086,11 @@
     "text": "オゾン層の保存",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36347"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "保存(オゾン)層の破壊",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36348"
   }
 ]
