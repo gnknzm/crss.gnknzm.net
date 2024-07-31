@@ -1684,5 +1684,11 @@
     "text": "没頭するBot",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36280"
+  },
+  {
+    "author": "clara-3772",
+    "text": "sksatに殺到",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
+    "id": "CRE-2024-36281"
   }
 ]
