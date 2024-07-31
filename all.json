@@ -1702,5 +1702,11 @@
     "text": "誰か助けての片すの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36283"
+  },
+  {
+    "author": "clara-3772",
+    "text": "テキサンの起算の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36284"
   }
 ]
