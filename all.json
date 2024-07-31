@@ -2110,5 +2110,11 @@
     "text": "目がメガチカチカする",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36351"
+  },
+  {
+    "author": "RyotaK",
+    "text": "目がメガ痒い〜",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:M",
+    "id": "CRE-2024-36352"
   }
 ]
