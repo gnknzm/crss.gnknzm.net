@@ -1396,5 +1396,11 @@
     "text": "隕石辞任",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36232"
+  },
+  {
+    "author": "yanorei32",
+    "text": "ロック（石）によるロック（スタイル）なロック（施錠）",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36233"
   }
 ]
