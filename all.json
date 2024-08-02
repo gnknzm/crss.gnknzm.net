@@ -2134,5 +2134,11 @@
     "text": "日持ちしなくてひもじい",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36355"
+  },
+  {
+    "author": "RyotaK",
+    "text": "「良いガーターベルト」の「いが食べる」の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:L/UK:H/TL:N/CA:L",
+    "id": "CRE-2024-36356"
   }
 ]
