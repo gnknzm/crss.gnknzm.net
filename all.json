@@ -2257,8 +2257,8 @@
   },
   {
     "author": "yanorei32",
-    "text": "エアコン機器の危機により効きが悪い。",
-    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "text": "「エアコン機器の危機により効きが悪い。」と聞き及んでおります",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36376"
   }
 ]
