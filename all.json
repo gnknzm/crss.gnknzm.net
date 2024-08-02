@@ -2188,5 +2188,11 @@
     "text": "溶解した妖怪",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36364"
+  },
+  {
+    "author": "yanorei32",
+    "text": "木曜を供養",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36365"
   }
 ]
