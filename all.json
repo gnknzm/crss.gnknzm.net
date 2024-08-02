@@ -2224,5 +2224,11 @@
     "text": "来週issueたてといて",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36370"
+  },
+  {
+    "author": "yanorei32",
+    "text": "童貞であることの同定",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36371"
   }
 ]
