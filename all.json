@@ -2254,5 +2254,11 @@
     "text": "そこの側溝の底",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36375"
+  },
+  {
+    "author": "yanorei32",
+    "text": "エアコン機器の危機により効きが悪い。",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36376"
   }
 ]
