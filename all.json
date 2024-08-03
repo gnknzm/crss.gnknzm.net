@@ -2314,5 +2314,11 @@
     "text": "もらい事故の維持の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36385"
+  },
+  {
+    "author": "yanorei32",
+    "text": "リトライの到来",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36386"
   }
 ]
