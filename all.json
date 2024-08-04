@@ -2422,5 +2422,11 @@
     "text": "鳥を取り逃す",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36403"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "夜分に来る親分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36404"
   }
 ]
