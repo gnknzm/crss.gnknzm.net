@@ -2404,5 +2404,11 @@
     "text": "段ボールで暖を取る",
     "vector_string": "CRSS:1.0/SI:M/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36400"
+  },
+  {
+    "author": "yu-32",
+    "text": "チーズの地図",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36401"
   }
 ]
