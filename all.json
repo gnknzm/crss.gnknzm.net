@@ -2476,5 +2476,11 @@
     "text": "やべーベンチ、やベンチ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36412"
+  },
+  {
+    "author": "RyotaK",
+    "text": "汚染されたAuthenticator",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36413"
   }
 ]
