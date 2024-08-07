@@ -2524,5 +2524,11 @@
     "text": "京都のMS社員「MS-どす」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36420"
+  },
+  {
+    "author": "RyotaK",
+    "text": "茶葉をバチャバチャ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36421"
   }
 ]
