@@ -2566,5 +2566,11 @@
     "text": "未成年には見せんねん",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36427"
+  },
+  {
+    "author": "yu-32",
+    "text": "神社で飲むジンジャーエールは美味い。",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36428"
   }
 ]
