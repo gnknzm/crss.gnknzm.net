@@ -2584,5 +2584,11 @@
     "text": "庭で2羽、鶏を飼ってる。",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36430"
+  },
+  {
+    "author": "yu-32",
+    "text": "ケネンの懸念表明",
+    "vector_string": "CRSS:1.0/SI:H/GC:L/UK:H/TL:R/CA:L",
+    "id": "CRE-2024-36431"
   }
 ]
