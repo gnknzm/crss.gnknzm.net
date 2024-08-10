@@ -2590,5 +2590,11 @@
     "text": "ケネンの懸念表明",
     "vector_string": "CRSS:1.0/SI:H/GC:L/UK:H/TL:R/CA:L",
     "id": "CRE-2024-36431"
+  },
+  {
+    "author": "yanorei32",
+    "text": "藤井発汗、汗をかいている藤井聡太のこと",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36432"
   }
 ]
