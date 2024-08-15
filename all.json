@@ -2632,5 +2632,11 @@
     "text": "カサカサの監査ログ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36438"
+  },
+  {
+    "author": "RyotaK",
+    "text": "キーボードを希望ってね、キーボードだけに",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36439"
   }
 ]
