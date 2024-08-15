@@ -2626,5 +2626,11 @@
     "text": "Siro256「後ろ後ろ」 yanorei32「後ろ？しろだけに？」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
     "id": "CRE-2024-36437"
+  },
+  {
+    "author": "yanorei32",
+    "text": "カサカサの監査ログ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36438"
   }
 ]
