@@ -2662,5 +2662,11 @@
     "text": "コンセンサスが得られるまで混線さす",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36443"
+  },
+  {
+    "author": "yu-32",
+    "text": "神殿で死んでんすか！？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36444"
   }
 ]
