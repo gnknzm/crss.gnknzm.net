@@ -2710,5 +2710,11 @@
     "text": "クッションの上でハックション",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36451"
+  },
+  {
+    "author": "yu-32",
+    "text": "サバのサバイバル",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36452"
   }
 ]
