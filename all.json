@@ -2740,5 +2740,11 @@
     "text": "カツカツの死活監視",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36456"
+  },
+  {
+    "author": "yu-32",
+    "text": "君の宝はたからんよ。",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36457"
   }
 ]
