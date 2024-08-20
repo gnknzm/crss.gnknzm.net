@@ -2812,5 +2812,11 @@
     "text": "権限を顕現",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36468"
+  },
+  {
+    "author": "kory33",
+    "text": "二次配布の字牌の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36469"
   }
 ]
