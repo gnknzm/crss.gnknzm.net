@@ -2902,5 +2902,11 @@
     "text": "サムスン寒すんぎ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36483"
+  },
+  {
+    "author": "yu-32",
+    "text": "紙切れで髪切れ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36484"
   }
 ]
