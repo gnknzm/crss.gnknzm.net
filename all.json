@@ -2944,5 +2944,11 @@
     "text": "実装が失踪",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36490"
+  },
+  {
+    "author": "yanorei32",
+    "text": "質素な実装",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36491"
   }
 ]
