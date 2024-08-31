@@ -11,9 +11,6 @@ permissions:
   issues: write
   contents: write
 
-concurrency:
-  group: ${{ github.workflow }}
-
 jobs:
   register-oyajigyagu:
     runs-on: ubuntu-latest
@@ -26,9 +23,17 @@ jobs:
         run: npm install
         working-directory: .github/scripts
 
+      - name: Acquire lock
+        run: |
+          node .github/scripts/acquire-lock.js
+
       - name: Sync database to main branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_PAYLOAD: ${{ toJson(github.event.issue) }}
         run: |
           node .github/scripts/sync-database.js
+
+      - name: Release lock
+        run: |
+          node .github/scripts/release-lock.js
