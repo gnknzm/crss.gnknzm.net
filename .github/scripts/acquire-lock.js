@@ -16,6 +16,7 @@ configureGit();
 (async () => {
     while (true) {
         try {
+            cp.execSync('git checkout master');
             cp.execSync('git branch -D workflow-lock || true');
             cp.execSync('git checkout -b workflow-lock');
             cp.execFileSync('git', ['commit', '--allow-empty', '-m', 'Acquire lock ' + crypto.randomUUID()]);
