@@ -6,6 +6,15 @@ function configureGit() {
     cp.execSync('git config --global user.name "github-actions[bot]"');
 }
 
+function checkoutBranch(branch) {
+    cp.execSync('git pull');
+    try {
+        cp.execFileSync('git', ['checkout', branch]);
+    } catch (e) {
+        cp.execFileSync('git', ['checkout', '-b', branch]);
+    }
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -15,7 +24,7 @@ configureGit();
 (async () => {
     while (true) {
         try {
-            cp.execFileSync('git', ['checkout', '-b', 'workflow-lock']);
+            checkoutBranch('workflow-lock');
             cp.execSync('git commit --allow-empty -m "Acquire lock"');
             cp.execFileSync('git', ['push', '-u', 'origin', 'workflow-lock']);
             console.log("Acquired lock!");
