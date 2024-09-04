@@ -62,7 +62,6 @@ try {
         repo: repo,
         state: 'closed'
     });
-    checkoutBranch('master');
 } catch (e) {
     octokit.rest.issues.createComment({
         issue_number: issue.number,
@@ -78,3 +77,4 @@ try {
     });
     console.log(e);
 }
+checkoutBranch('master');
