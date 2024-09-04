@@ -3082,5 +3082,11 @@
     "text": "熱帯で寝たい",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36513"
+  },
+  {
+    "author": "yu-32",
+    "text": "「早退したって?」「そうたいした事ないよー！」",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36514"
   }
 ]
