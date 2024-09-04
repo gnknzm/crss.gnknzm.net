@@ -3064,5 +3064,11 @@
     "text": "「早退したって?」「そうたいした事ないよー！」",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36510"
+  },
+  {
+    "author": "yu-32",
+    "text": "気候の奇行",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36511"
   }
 ]
