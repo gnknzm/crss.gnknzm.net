@@ -3112,5 +3112,11 @@
     "text": "侵害だなんて... 心外だなぁ...",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36518"
+  },
+  {
+    "author": "yanorei32",
+    "text": "意外性の外製の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:R/CA:L",
+    "id": "CRE-2024-36519"
   }
 ]
