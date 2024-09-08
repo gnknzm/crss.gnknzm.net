@@ -3184,5 +3184,11 @@
     "text": "スカッとマス、カット",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36530"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "デカいバイト、メガバイト",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36531"
   }
 ]
