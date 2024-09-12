@@ -3214,5 +3214,11 @@
     "text": "井戸に移動",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36535"
+  },
+  {
+    "author": "yu-32",
+    "text": "扇子のセンス良い",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36536"
   }
 ]
