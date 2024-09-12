@@ -3208,5 +3208,11 @@
     "text": "抵抗していこう",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36534"
+  },
+  {
+    "author": "yu-32",
+    "text": "井戸に移動",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36535"
   }
 ]
