@@ -3244,5 +3244,11 @@
     "text": "ヨーダの余談",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36540"
+  },
+  {
+    "author": "RyotaK",
+    "text": "ラベルが選べる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36541"
   }
 ]
