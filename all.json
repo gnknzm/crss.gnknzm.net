@@ -3238,5 +3238,11 @@
     "text": "ヘルス減るっす",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36539"
+  },
+  {
+    "author": "yu-32",
+    "text": "ヨーダの余談",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36540"
   }
 ]
