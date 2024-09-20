@@ -3316,5 +3316,11 @@
     "text": "柚子を譲る",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36552"
+  },
+  {
+    "author": "kory33",
+    "text": "風邪をひいた GitHub Actions 「ﾊactions!」",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:M",
+    "id": "CRE-2024-36553"
   }
 ]
