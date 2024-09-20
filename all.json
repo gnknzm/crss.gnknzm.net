@@ -3322,5 +3322,11 @@
     "text": "風邪をひいた GitHub Actions 「ﾊactions!」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:M",
     "id": "CRE-2024-36553"
+  },
+  {
+    "author": "yu-32",
+    "text": "予算を増やすのはよさんか",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36554"
   }
 ]
