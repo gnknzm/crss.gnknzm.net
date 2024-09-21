@@ -3376,5 +3376,11 @@
     "text": "ちょくちょく進捗を出してくれないと困るんですよ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36562"
+  },
+  {
+    "author": "RyotaK",
+    "text": "つくばに着くまでどれぐらいかかりますか？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36563"
   }
 ]
