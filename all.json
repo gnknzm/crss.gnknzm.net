@@ -3352,5 +3352,11 @@
     "text": "でかい稲荷を見たコロ助「でかいナリ...」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36558"
+  },
+  {
+    "author": "yanorei32",
+    "text": "コードを書く行動",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36559"
   }
 ]
