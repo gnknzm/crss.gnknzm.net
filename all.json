@@ -3412,5 +3412,11 @@
     "text": "家系-47 (AK-47)",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36568"
+  },
+  {
+    "author": "Lenqth",
+    "text": "家系ラーメンに行けい",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36569"
   }
 ]
