@@ -3406,5 +3406,11 @@
     "text": "タイに行きたい",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36567"
+  },
+  {
+    "author": "kory33",
+    "text": "家系-47 (AK-47)",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36568"
   }
 ]
