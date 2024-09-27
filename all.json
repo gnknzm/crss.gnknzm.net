@@ -3460,5 +3460,11 @@
     "text": "元帥の声減衰",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36576"
+  },
+  {
+    "author": "RyotaK",
+    "text": "眠い、ナノイー…、あたまいたイー…",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36577"
   }
 ]
