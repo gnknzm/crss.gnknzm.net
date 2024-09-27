@@ -3484,5 +3484,11 @@
     "text": "カクカクした区画を書く",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36580"
+  },
+  {
+    "author": "RyotaK",
+    "text": "スーパー酸っぱい",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36581"
   }
 ]
