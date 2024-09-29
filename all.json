@@ -3526,5 +3526,11 @@
     "text": "VbusをV (電源)にバスバス",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36587"
+  },
+  {
+    "author": "RyotaK",
+    "text": "インターンに行ったーん",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36588"
   }
 ]
