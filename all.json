@@ -3592,5 +3592,11 @@
     "text": "しろが再起動しろって...",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
     "id": "CRE-2024-36598"
+  },
+  {
+    "author": "kory33",
+    "text": "低周波の issue の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36599"
   }
 ]
