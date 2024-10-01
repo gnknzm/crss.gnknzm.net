@@ -34,8 +34,10 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 try {
     configureGit();
     checkoutBranch('database');
+    const year = new Date().getFullYear();
     const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
-    const id = `CRE-${new Date().getFullYear()}-${36000 + files.length}`;
+    const yearFilesCount = files.filter(file => file.startsWith(`CRE-${year}-`)).length;
+    const id = `CRE-${year}-${36000 + yearFilesCount}`;
     const body = JSON.parse(issue.body);
     if (!body.author || !body.text || !body.vector_string) {
         throw new Error('Invalid issue body');
