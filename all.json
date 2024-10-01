@@ -3610,5 +3610,11 @@
     "text": "爆音のバックドア、バック音ドア",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36601"
+  },
+  {
+    "author": "siro256",
+    "text": "定期的に飲むお茶、cron茶 (ウーロン茶)",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36602"
   }
 ]
