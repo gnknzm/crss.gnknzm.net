@@ -3658,5 +3658,11 @@
     "text": "キラキラのテキーラ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:M",
     "id": "CRE-2024-36609"
+  },
+  {
+    "author": "RyotaK",
+    "text": "このビスはサービスだ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36610"
   }
 ]
