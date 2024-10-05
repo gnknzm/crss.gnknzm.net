@@ -315,7 +315,7 @@
             severityElement.textContent = format(overall_score) + ' ' + severity.label;
             severityElement.className = severity.class;
 
-            document.getElementById('share_twitter').href = `https://x.com/intent/tweet?text=${encodeURIComponent(`${data.author}「${data.text}」${format(overall_score) + ' ' + severity.label} \nhttps://crss.gnknzm.net/details/?id=${id}`)}`;
+            document.getElementById('share_twitter').href = `https://x.com/intent/tweet?text=${encodeURIComponent(`${data.author}「${data.text}」${format(overall_score) + ' ' + severity.label} \n#CRSS\nhttps://crss.gnknzm.net/details/?id=${id}`)}`;
         })();
     </script>
 </body>
