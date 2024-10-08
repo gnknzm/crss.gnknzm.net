@@ -3724,5 +3724,11 @@
     "text": "SASが刺せる",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36620"
+  },
+  {
+    "author": "yu-32",
+    "text": "あたりめを食べるのはあたりめぇ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36621"
   }
 ]
