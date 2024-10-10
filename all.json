@@ -3802,5 +3802,11 @@
     "text": "みっともないの MITM の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:R/CA:L",
     "id": "CRE-2024-36633"
+  },
+  {
+    "author": "kory33",
+    "text": "おそろのオシロ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:M",
+    "id": "CRE-2024-36634"
   }
 ]
