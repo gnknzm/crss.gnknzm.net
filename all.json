@@ -3766,5 +3766,11 @@
     "text": "緋色のヒーロー",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36627"
+  },
+  {
+    "author": "yu-32",
+    "text": "養成を要請",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36628"
   }
 ]
