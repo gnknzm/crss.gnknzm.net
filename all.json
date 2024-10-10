@@ -3760,5 +3760,11 @@
     "text": "ヒーローの披露",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36626"
+  },
+  {
+    "author": "yu-32",
+    "text": "緋色のヒーロー",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36627"
   }
 ]
