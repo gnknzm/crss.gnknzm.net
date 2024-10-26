@@ -69,13 +69,7 @@ try {
         issue_number: issue.number,
         owner: owner,
         repo: repo,
-        body: `Closing issue due to the invalid body.`
-    });
-    octokit.rest.issues.update({
-        issue_number: issue.number,
-        owner: owner,
-        repo: repo,
-        state: 'closed'
+        body: `Skipping issue due to the invalid body.`
     });
     console.log(e);
 }
