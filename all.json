@@ -3970,5 +3970,11 @@
     "text": "コンドルが寝込んどる",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36661"
+  },
+  {
+    "author": "yu-32",
+    "text": "この作品のコンドル、手こんどる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36662"
   }
 ]
