@@ -3934,5 +3934,11 @@
     "text": "チーズバーガーをズバーっと",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36655"
+  },
+  {
+    "author": "yanorei32",
+    "text": "ワクワクする枠 (ニコ生の枠の意)",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36656"
   }
 ]
