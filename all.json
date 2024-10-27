@@ -4006,5 +4006,11 @@
     "text": "高度な行動",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36667"
+  },
+  {
+    "author": "siro256",
+    "text": "論文をぶんぶん振り回す",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36668"
   }
 ]
