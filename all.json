@@ -4018,5 +4018,11 @@
     "text": "胡乱なロン、略して胡ロン",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36669"
+  },
+  {
+    "author": "yanorei32",
+    "text": "神田(KANDA)のNDAの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36670"
   }
 ]
