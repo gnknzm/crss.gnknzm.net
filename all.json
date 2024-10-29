@@ -4036,5 +4036,11 @@
     "text": "今週のコンシューマ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36672"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "今週末のコンシュー末(マズ)",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36673"
   }
 ]
