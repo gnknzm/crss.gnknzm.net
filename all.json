@@ -4186,5 +4186,11 @@
     "text": "土器を作る動機",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36697"
+  },
+  {
+    "author": "yanorei32",
+    "text": "ドキドキの同期",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36698"
   }
 ]
