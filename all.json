@@ -4222,5 +4222,11 @@
     "text": "Floor a lie",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36703"
+  },
+  {
+    "author": "RyotaK",
+    "text": "ブレブレのblame",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36704"
   }
 ]
