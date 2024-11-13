@@ -4288,5 +4288,11 @@
     "text": "寝ないとのナイトの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36714"
+  },
+  {
+    "author": "RyotaK",
+    "text": "夜だから寝Night",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36715"
   }
 ]
