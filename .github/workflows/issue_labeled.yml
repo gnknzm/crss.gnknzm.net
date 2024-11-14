@@ -17,7 +17,7 @@ jobs:
     if: github.event.label.name == 'Oyajigyagu Approved'
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
 
       - name: Install dependencies
         run: npm install
