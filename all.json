@@ -4330,5 +4330,11 @@
     "text": "狩猟を終了",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36721"
+  },
+  {
+    "author": "RyotaK",
+    "text": "理由返せの誘拐の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36722"
   }
 ]
