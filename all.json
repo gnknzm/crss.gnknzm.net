@@ -4318,5 +4318,11 @@
     "text": "｢良くナイトリー｣ の ｢良くない鳥｣ の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36719"
+  },
+  {
+    "author": "RyotaK",
+    "text": "EasyAntiCheatの事案の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36720"
   }
 ]
