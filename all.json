@@ -4492,5 +4492,11 @@
     "text": "リッチな戻り値",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36748"
+  },
+  {
+    "author": "yu-32",
+    "text": "メジャーを使うのはだめじゃー",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36749"
   }
 ]
