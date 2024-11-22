@@ -4504,5 +4504,11 @@
     "text": "函館の箱だって",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36750"
+  },
+  {
+    "author": "RyotaK",
+    "text": "ビビッとheartbeat",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36751"
   }
 ]
