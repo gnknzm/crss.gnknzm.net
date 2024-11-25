@@ -4564,5 +4564,11 @@
     "text": "サーボホーンっていうんだー、ほーん",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36760"
+  },
+  {
+    "author": "yu-32",
+    "text": "箒を放棄",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36761"
   }
 ]
