@@ -4570,5 +4570,11 @@
     "text": "箒を放棄",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36761"
+  },
+  {
+    "author": "RyotaK",
+    "text": "カレンダーを可憐に連打",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36762"
   }
 ]
