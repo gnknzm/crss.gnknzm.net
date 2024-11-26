@@ -4576,5 +4576,11 @@
     "text": "カレンダーを可憐に連打",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36762"
+  },
+  {
+    "author": "RyotaK",
+    "text": "可憐とステータス",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2024-36763"
   }
 ]
