@@ -4582,5 +4582,11 @@
     "text": "可憐とステータス",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2024-36763"
+  },
+  {
+    "author": "RyotaK",
+    "text": "イクラが足りない？いくら足りない？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36764"
   }
 ]
