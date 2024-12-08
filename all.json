@@ -4636,5 +4636,11 @@
     "text": "白鳥の口調",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36772"
+  },
+  {
+    "author": "yu-32",
+    "text": "畑で働け",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36773"
   }
 ]
