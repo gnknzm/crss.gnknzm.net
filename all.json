@@ -4696,5 +4696,11 @@
     "text": "喉の調子どう? ノーど",
     "vector_string": "CRSS:1.0/SI:H/GC:L/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36782"
+  },
+  {
+    "author": "yu-32",
+    "text": "飛行士の非行",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36783"
   }
 ]
