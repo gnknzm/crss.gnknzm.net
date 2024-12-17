@@ -12,3 +12,6 @@
 
 ## Search function author
 [@lemoncmd](https://github.com/lemoncmd)
+
+## 2025 problem patch author
+[@ecto0310](https://github.com/ecto0310)
