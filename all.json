@@ -4708,5 +4708,11 @@
     "text": "Killerなんてキラーい！",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36784"
+  },
+  {
+    "author": "yu-32",
+    "text": "カモノハシが作った橋、鴨の橋",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36785"
   }
 ]
