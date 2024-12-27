@@ -4876,5 +4876,11 @@
     "text": "汚ねぇ種",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36812"
+  },
+  {
+    "author": "yu-32",
+    "text": "チャットをちゃちゃっと送る",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36813"
   }
 ]
