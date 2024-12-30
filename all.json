@@ -4954,5 +4954,11 @@
     "text": "データが出たー！",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36825"
+  },
+  {
+    "author": "yu-32",
+    "text": "うがいをしてる鵜がいる。",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36826"
   }
 ]
