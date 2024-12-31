@@ -3,6 +3,11 @@ const fs = require('fs');
 const cp = require('child_process');
 const github = require('@actions/github');
 
+const INITIAL_ID = {
+    "2024": "36000",
+    "2025": "47000"
+};
+
 function configureGit() {
     cp.execSync('git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"');
     cp.execSync('git config --global user.name "github-actions[bot]"');
@@ -40,7 +45,7 @@ try {
     const year = new Date(currentDate.getTime() + timezoneOffset * 1000 * 600).getFullYear();
     const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
     const yearFilesCount = files.filter(file => file.startsWith(`CRE-${year}-`)).length;
-    const id = `CRE-${year}-${36000 + yearFilesCount}`;
+    const id = `CRE-${year}-${INITIAL_ID[year] + yearFilesCount}`;
     const body = JSON.parse(issue.body);
     if (!body.author || !body.text || !body.vector_string) {
         throw new Error('Invalid issue body');
