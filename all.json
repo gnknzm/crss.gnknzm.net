@@ -4960,5 +4960,11 @@
     "text": "うがいをしてる鵜がいる。",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2024-36826"
+  },
+  {
+    "author": "yu-32",
+    "text": "消化しようか",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2024-36827"
   }
 ]
