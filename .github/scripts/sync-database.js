@@ -4,8 +4,8 @@ const cp = require('child_process');
 const github = require('@actions/github');
 
 const INITIAL_ID = {
-    "2024": "36000",
-    "2025": "47000"
+    "2024": 36000,
+    "2025": 47000
 };
 
 function configureGit() {
