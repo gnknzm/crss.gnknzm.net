@@ -34,7 +34,10 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 try {
     configureGit();
     checkoutBranch('database');
-    const year = new Date().getFullYear();
+    // UTC+9 = 540 
+    const currentDate = new Date();
+    const timezoneOffset = 540 + currentDate.getTimezoneOffset();
+    const year = new Date(currentDate.getTime() + timezoneOffset * 1000 * 600).getFullYear();
     const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
     const yearFilesCount = files.filter(file => file.startsWith(`CRE-${year}-`)).length;
     const id = `CRE-${year}-${36000 + yearFilesCount}`;
