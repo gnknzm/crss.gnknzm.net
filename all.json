@@ -5008,5 +5008,11 @@
     "text": "飲み会後の密会",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47003"
+  },
+  {
+    "author": "Pz2Or",
+    "text": "ノーベル賞について述べる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47004"
   }
 ]
