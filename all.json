@@ -5092,5 +5092,11 @@
     "text": "ハロー！波浪警報",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47017"
+  },
+  {
+    "author": "Pz2Or",
+    "text": "勝海舟がカツ回収",
+    "vector_string": "CRSS:1.0/SI:M/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47018"
   }
 ]
