@@ -5152,5 +5152,11 @@
     "text": "amendするの、あぁ、面倒",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47027"
+  },
+  {
+    "author": "yu-32",
+    "text": "情け無さげ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47028"
   }
 ]
