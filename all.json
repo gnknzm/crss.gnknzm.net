@@ -5140,5 +5140,11 @@
     "text": "飲酒かどうかは因習によって決まっていますね",
     "vector_string": "CRSS:1.0/SI:M/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47025"
+  },
+  {
+    "author": "RyotaK",
+    "text": "パワーコソチカラのパワコンの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:R/CA:L",
+    "id": "CRE-2025-47026"
   }
 ]
