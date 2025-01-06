@@ -5134,5 +5134,11 @@
     "text": "SATを使えばさっと解けるね",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47024"
+  },
+  {
+    "author": "Lenqth",
+    "text": "飲酒かどうかは因習によって決まっていますね",
+    "vector_string": "CRSS:1.0/SI:M/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47025"
   }
 ]
