@@ -5212,5 +5212,11 @@
     "text": "イメージを明示",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47037"
+  },
+  {
+    "author": "yu-32",
+    "text": "強引にGoing",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47038"
   }
 ]
