@@ -5236,5 +5236,11 @@
     "text": "yanorei32「openh264のfuzzer...!?」RyotaK「openh264のfatherはCiscoだよ」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47041"
+  },
+  {
+    "author": "yu-32",
+    "text": "半強制的な反響",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47042"
   }
 ]
