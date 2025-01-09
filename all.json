@@ -5248,5 +5248,11 @@
     "text": "アラーム鳴った。あら～",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47043"
+  },
+  {
+    "author": "RyotaK",
+    "text": "やんちゃすぎて\"やん\"なっ\"ちゃ\"うね",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47044"
   }
 ]
