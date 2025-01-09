@@ -5230,5 +5230,11 @@
     "text": "もちもちのモチベ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47040"
+  },
+  {
+    "author": "RyotaK",
+    "text": "yanorei32「openh264のfuzzer...!?」RyotaK「openh264のfatherはCiscoだよ」",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47041"
   }
 ]
