@@ -5290,5 +5290,11 @@
     "text": "Kory「RyotaKさんは麺と一緒にメンションされがちだからね」RyotaK「麺だけに？\"メン\"ションって？」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47050"
+  },
+  {
+    "author": "RyotaK",
+    "text": "（お店）急<Queue>に入れるかな",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47051"
   }
 ]
