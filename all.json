@@ -5392,5 +5392,11 @@
     "text": "めちゃくちゃいいのチャイの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47067"
+  },
+  {
+    "author": "RyotaK",
+    "text": "めちゃくちゃいいの着地の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:R/CA:L",
+    "id": "CRE-2025-47068"
   }
 ]
