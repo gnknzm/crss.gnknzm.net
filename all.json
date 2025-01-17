@@ -5434,5 +5434,11 @@
     "text": "管理用ユーザーの作成完了",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:R/CA:L",
     "id": "CRE-2025-47074"
+  },
+  {
+    "author": "Lenqth",
+    "text": "今日、病院のあとに美容院に遅れそうになっている人見ました",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47075"
   }
 ]
