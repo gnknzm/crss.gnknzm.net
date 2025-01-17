@@ -5440,5 +5440,11 @@
     "text": "今日、病院のあとに美容院に遅れそうになっている人見ました",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47075"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "マイナンバーカードのバーカの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47076"
   }
 ]
