@@ -5428,5 +5428,11 @@
     "text": "もしそうならの思想の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47073"
+  },
+  {
+    "author": "Lenqth",
+    "text": "管理用ユーザーの作成完了",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:R/CA:L",
+    "id": "CRE-2025-47074"
   }
 ]
