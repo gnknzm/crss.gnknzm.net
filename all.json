@@ -5536,5 +5536,11 @@
     "text": "FreeCAD、古いCADってこと？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47091"
+  },
+  {
+    "author": "Lenqth",
+    "text": "互換性がないので、う\"ごかんぜえ\"",
+    "vector_string": "CRSS:1.0/SI:M/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47092"
   }
 ]
