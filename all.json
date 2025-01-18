@@ -5506,5 +5506,11 @@
     "text": "イルカがいるか？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47086"
+  },
+  {
+    "author": "melt-adzuki",
+    "text": "いがめたさんゆがめた",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47087"
   }
 ]
