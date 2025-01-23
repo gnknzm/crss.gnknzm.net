@@ -5566,5 +5566,11 @@
     "text": "首筋のビスの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47096"
+  },
+  {
+    "author": "RyotaK",
+    "text": "既知平文がないときちい！",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47097"
   }
 ]
