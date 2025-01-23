@@ -5578,5 +5578,11 @@
     "text": "食器割れてショッキング",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47098"
+  },
+  {
+    "author": "yanorei32",
+    "text": "彼の華麗な鰈。",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:M",
+    "id": "CRE-2025-47099"
   }
 ]
