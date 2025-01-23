@@ -5596,5 +5596,11 @@
     "text": "トロトロのトトロ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47101"
+  },
+  {
+    "author": "RyotaK",
+    "text": "Kubeを火にKubeる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47102"
   }
 ]
