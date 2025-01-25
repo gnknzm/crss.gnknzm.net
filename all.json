@@ -5680,5 +5680,11 @@
     "text": "キュートな給湯器",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47115"
+  },
+  {
+    "author": "Lenqth",
+    "text": "正気のSATAではない",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47116"
   }
 ]
