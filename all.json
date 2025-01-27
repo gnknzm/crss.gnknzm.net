@@ -5752,5 +5752,11 @@
     "text": "学生の覚醒",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47127"
+  },
+  {
+    "author": "RyotaK",
+    "text": "学生の臭えの部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47128"
   }
 ]
