@@ -5776,5 +5776,11 @@
     "text": "証明書のうめぇ！の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47131"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "固定IPの居合の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47132"
   }
 ]
