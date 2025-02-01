@@ -5794,5 +5794,11 @@
     "text": "(賞味期限が間近の食品に対して) 正味賞味期限だしな",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:M",
     "id": "CRE-2025-47134"
+  },
+  {
+    "author": "yanknvim",
+    "text": "だいぶ辛いの大仏の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:M",
+    "id": "CRE-2025-47135"
   }
 ]
