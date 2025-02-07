@@ -5866,5 +5866,11 @@
     "text": "異臭のする買収",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47146"
+  },
+  {
+    "author": "RyotaK",
+    "text": "ドルを買い込んどる",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47147"
   }
 ]
