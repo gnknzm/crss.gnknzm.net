@@ -5956,5 +5956,11 @@
     "text": "中古のKory、中古ry",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47161"
+  },
+  {
+    "author": "yudukiha",
+    "text": "牛だけに、ぎゅうぎゅう詰めなんですか？",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47162"
   }
 ]
