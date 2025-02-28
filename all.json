@@ -6004,5 +6004,11 @@
     "text": "今は 2 が two",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:R/CA:L",
     "id": "CRE-2025-47169"
+  },
+  {
+    "author": "RyotaK",
+    "text": "JALでごじゃるな...?",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47170"
   }
 ]
