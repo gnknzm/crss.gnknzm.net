@@ -6016,5 +6016,11 @@
     "text": "yanorei32「この状況で(ホットコーヒーを)ほっとこう。」RyotaK「ホットだけに？」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47171"
+  },
+  {
+    "author": "RyotaK",
+    "text": "デーモンの状況はひでーもんだったよ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47172"
   }
 ]
