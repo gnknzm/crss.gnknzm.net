@@ -6046,5 +6046,11 @@
     "text": "敵の挙動キョドキョドしてる。",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47176"
+  },
+  {
+    "author": "yu-32",
+    "text": "血行結構良くなった。",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47177"
   }
 ]
