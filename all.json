@@ -6064,5 +6064,11 @@
     "text": "地下労働の過労の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47179"
+  },
+  {
+    "author": "RyotaK",
+    "text": "市役所のクショー！の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47180"
   }
 ]
