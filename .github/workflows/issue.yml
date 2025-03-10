@@ -15,7 +15,7 @@ jobs:
     if: ${{ startsWith(github.event.issue.title, 'Add oyajigyagu ') }}
     steps:
       - name: Check permissions
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+        uses: actions/github-script@3908079ba1e7bce10117ad701c321d07e89017a9
         with:
           script: |
             const { data: permissions } = await github.rest.repos.getCollaboratorPermissionLevel({
