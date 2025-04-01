@@ -6130,5 +6130,11 @@
     "text": "グンマー帝国に入国するにはビザが必要だからVISAカード発給しないとね",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47190"
+  },
+  {
+    "author": "yu-32",
+    "text": "スベる術が見つからない",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47191"
   }
 ]
