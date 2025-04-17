@@ -6184,5 +6184,11 @@
     "text": "不正アクセス禁止法の司法の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47199"
+  },
+  {
+    "author": "yanknvim",
+    "text": "ようかんはよう噛んでたべよう！",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47200"
   }
 ]
