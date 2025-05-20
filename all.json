@@ -6262,5 +6262,11 @@
     "text": "腰抜けの「死ぬ」の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47212"
+  },
+  {
+    "author": "siro256",
+    "text": "腰抜けの「死ぬけ？」の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47213"
   }
 ]
