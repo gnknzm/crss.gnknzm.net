@@ -6286,5 +6286,11 @@
     "text": "えくとのベクトル、エクトル",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47216"
+  },
+  {
+    "author": "RyotaK",
+    "text": "バックライトが暗いと",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47217"
   }
 ]
