@@ -6292,5 +6292,11 @@
     "text": "バックライトが暗いと",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47217"
+  },
+  {
+    "author": "yu-32",
+    "text": "痛いっていいたい",
+    "vector_string": "CRSS:1.0/SI:M/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47218"
   }
 ]
