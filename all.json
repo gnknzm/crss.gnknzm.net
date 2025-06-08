@@ -6322,5 +6322,11 @@
     "text": "憎いニックネーム",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:/CA:L",
     "id": "CRE-2025-47222"
+  },
+  {
+    "author": "RyotaK",
+    "text": "めぼしい梅干し",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47223"
   }
 ]
