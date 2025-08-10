@@ -6382,5 +6382,11 @@
     "text": "yanorei32「ネトストとOSINTの違いって何？」 RyotaK「ねっとりしてるかどうか」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:M",
     "id": "CRE-2025-47232"
+  },
+  {
+    "author": "RyotaK",
+    "text": "公序凌辱",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47233"
   }
 ]
