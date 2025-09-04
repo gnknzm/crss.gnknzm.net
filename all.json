@@ -6412,5 +6412,11 @@
     "text": "平らなラップ、タイラップ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47237"
+  },
+  {
+    "author": "yu-32",
+    "text": "亀の胃カメラ",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47238"
   }
 ]
