@@ -6424,5 +6424,11 @@
     "text": "エラー吐いちゃった！えらいこっちゃ！",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47239"
+  },
+  {
+    "author": "yu-32",
+    "text": "無人のリムジン",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47240"
   }
 ]
