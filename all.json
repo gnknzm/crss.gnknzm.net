@@ -6466,5 +6466,11 @@
     "text": "RAWで撮ろうね",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2025-47246"
+  },
+  {
+    "author": "yu-32",
+    "text": "情報に譲歩",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2025-47247"
   }
 ]
