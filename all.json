@@ -6520,5 +6520,11 @@
     "text": "工作で試行錯誤",
     "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47255"
+  },
+  {
+    "author": "yanorei32",
+    "text": "Flattがふらふら～っとしてるんだね",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47256"
   }
 ]
