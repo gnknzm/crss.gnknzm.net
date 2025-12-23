@@ -6556,5 +6556,11 @@
     "text": "これを捨てる仕事、コレステロール",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2025-47261"
+  },
+  {
+    "author": "sim1222",
+    "text": "CORS殺す",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2025-47262"
   }
 ]
