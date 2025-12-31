@@ -5,7 +5,8 @@ const github = require('@actions/github');
 
 const INITIAL_ID = {
     "2024": 36000,
-    "2025": 47000
+    "2025": 47000,
+    "2026": 58000
 };
 
 function configureGit() {
@@ -39,13 +40,13 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 try {
     configureGit();
     checkoutBranch('database');
-    // UTC+9 = 540 
-    const currentDate = new Date();
-    const timezoneOffset = 540 + currentDate.getTimezoneOffset();
-    const year = new Date(currentDate.getTime() + timezoneOffset * 1000 * 600).getFullYear();
+    const japanYear = new Date().toLocaleString('en-US', {
+        timeZone: 'Asia/Tokyo',
+        year: 'numeric'
+    });
     const files = fs.readdirSync('.').filter(file => file.endsWith('.json'));
-    const yearFilesCount = files.filter(file => file.startsWith(`CRE-${year}-`)).length;
-    const id = `CRE-${year}-${INITIAL_ID[year] + yearFilesCount}`;
+    const yearFilesCount = files.filter(file => file.startsWith(`CRE-${japanYear}-`)).length;
+    const id = `CRE-${japanYear}-${INITIAL_ID[japanYear] + yearFilesCount}`;
     const body = JSON.parse(issue.body);
     if (!body.author || !body.text || !body.vector_string) {
         throw new Error('Invalid issue body');
