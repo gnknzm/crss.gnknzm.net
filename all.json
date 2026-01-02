@@ -6586,5 +6586,11 @@
     "text": "立派なスリッパ",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58000"
+  },
+  {
+    "author": "yu-32",
+    "text": "Showがない正月",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
+    "id": "CRE-2026-58001"
   }
 ]
