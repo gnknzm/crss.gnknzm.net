@@ -6604,5 +6604,11 @@
     "text": "太陽がめでたいよう",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58003"
+  },
+  {
+    "author": "yu-32",
+    "text": "墓地でぼっち！",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58004"
   }
 ]
