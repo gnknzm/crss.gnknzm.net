@@ -6628,5 +6628,11 @@
     "text": "オートマトンのトマトの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2026-58007"
+  },
+  {
+    "author": "RyotaK",
+    "text": "スキーが好きーだ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58008"
   }
 ]
