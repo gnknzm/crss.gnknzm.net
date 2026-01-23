@@ -6658,5 +6658,11 @@
     "text": "コレステロールのこれ捨てろの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58012"
+  },
+  {
+    "author": "yu-32",
+    "text": "レンチをレンチン (?)",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58013"
   }
 ]
