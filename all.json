@@ -6664,5 +6664,11 @@
     "text": "レンチをレンチン (?)",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58013"
+  },
+  {
+    "author": "longta1l",
+    "text": "エビ反り、これに乗ればエビのソリ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58014"
   }
 ]
