@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@actions/github": "^7.0.0"
+    "@actions/github": "^8.0.0"
   }
 }
