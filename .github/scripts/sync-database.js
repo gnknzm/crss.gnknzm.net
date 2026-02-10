@@ -1,7 +1,6 @@
-
-const fs = require('fs');
-const cp = require('child_process');
-const github = await import('@actions/github');
+import * as fs from 'fs';
+import * as cp from 'child_process';
+import * as github from '@actions/github';
 
 const INITIAL_ID = {
     "2024": 36000,
