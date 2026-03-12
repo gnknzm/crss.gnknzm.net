@@ -284,7 +284,11 @@
                 location.href = '/';
                 return;
             }
-            document.getElementById('cre_id').textContent = id;
+            const anchor = document.createElement('a');
+            anchor.textContent = id;
+            anchor.href = `https://github.com/gnknzm/crss.gnknzm.net/issues?q=is%3Aissue%20state%3Aclosed%20${id}`;
+            document.getElementById('cre_id').textContent = '';
+            document.getElementById('cre_id').appendChild(anchor);
             document.getElementById('cre_id').appendChild(document.getElementById('share_twitter'));
             document.getElementById('cre_id').appendChild(document.getElementById('share_clipboard'));
             document.title = `CRSS Calculator - ${id}`;
