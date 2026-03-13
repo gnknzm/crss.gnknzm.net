@@ -6724,5 +6724,11 @@
     "text": "Shy Guyの\"意外\"の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2026-58023"
+  },
+  {
+    "author": "kory33",
+    "text": "ぱさぱさのparser",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58024"
   }
 ]
