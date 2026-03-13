@@ -6730,5 +6730,11 @@
     "text": "ぱさぱさのparser",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58024"
+  },
+  {
+    "author": "lemoncmd",
+    "text": "エラーを吐けて、エラぁい",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58025"
   }
 ]
