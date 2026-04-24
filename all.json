@@ -6742,5 +6742,11 @@
     "text": "ヘルニアとは地獄が近いことを言う",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58026"
+  },
+  {
+    "author": "kory33",
+    "text": "言いくるめやいい栗目など",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
+    "id": "CRE-2026-58027"
   }
 ]
