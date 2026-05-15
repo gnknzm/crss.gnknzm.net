@@ -6748,5 +6748,11 @@
     "text": "言いくるめやいい栗目など",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:H/TL:N/CA:L",
     "id": "CRE-2026-58027"
+  },
+  {
+    "author": "yanknvim",
+    "text": "ぼちぼち墓地を使おうね",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58028"
   }
 ]
