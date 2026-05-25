@@ -6790,5 +6790,11 @@
     "text": "汗だけに焦ってって？",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58034"
+  },
+  {
+    "author": "RyotaK",
+    "text": "Please be young; 幼いでください",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58035"
   }
 ]
