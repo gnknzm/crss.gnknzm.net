@@ -6778,5 +6778,11 @@
     "text": "インシデントの印紙の部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58032"
+  },
+  {
+    "author": "uthree",
+    "text": "インシデントの院試の部分",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58033"
   }
 ]
