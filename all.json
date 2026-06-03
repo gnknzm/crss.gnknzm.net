@@ -6814,5 +6814,11 @@
     "text": "うとうとのmount(8)",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58038"
+  },
+  {
+    "author": "RyotaK",
+    "text": "大浴場に意欲",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58039"
   }
 ]
