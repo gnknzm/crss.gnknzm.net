@@ -6892,5 +6892,11 @@
     "text": "納税のうぜぇの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58051"
+  },
+  {
+    "author": "Lenqth",
+    "text": "D1（でーわん）出ーわん",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2026-58052"
   }
 ]
