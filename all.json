@@ -6898,5 +6898,11 @@
     "text": "D1（でーわん）出ーわん",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
     "id": "CRE-2026-58052"
+  },
+  {
+    "author": "RyotaK",
+    "text": "火中のピカチュウ",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58053"
   }
 ]
