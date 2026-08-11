@@ -6940,5 +6940,11 @@
     "text": "スプリングのプリンの部分",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58059"
+  },
+  {
+    "author": "REO2248",
+    "text": "Adoのブロッカー、AdBlocker",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58060"
   }
 ]
