@@ -6946,5 +6946,11 @@
     "text": "人が3人、人々々",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58060"
+  },
+  {
+    "author": "Lenqth",
+    "text": "カンフーポーズのAkyo、Acho",
+    "vector_string": "CRSS:1.0/SI:H/GC:H/UK:M/TL:N/CA:L",
+    "id": "CRE-2026-58061"
   }
 ]
