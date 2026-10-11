@@ -6976,5 +6976,11 @@
     "text": "ポケモン世界の博士号「ポケモン号（GO）」",
     "vector_string": "CRSS:1.0/SI:H/GC:H/UK:L/TL:N/CA:L",
     "id": "CRE-2026-58065"
+  },
+  {
+    "author": "yu-32",
+    "text": "台湾版PayPay、Taipay",
+    "vector_string": "CRSS:1.0/SI:H/GC:M/UK:L/TL:N/CA:L",
+    "id": "CRE-2026-58066"
   }
 ]
